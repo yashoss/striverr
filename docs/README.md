@@ -12,7 +12,7 @@ Striverr is a domain that allows users to post gigs (voice overs, web design, et
 * Gig dashboard  
   * orders, gig views, profile views, and listed gigs  
 * Categories  
-  * Nav bar with search by category 
+  * Nav bar with search by category
 * Rate and review  
 
 ## Design Docs
@@ -73,7 +73,15 @@ Striverr is a domain that allows users to post gigs (voice overs, web design, et
 * Allow gig editing and deleting from dashboard
 * Style dashboard
 
-### Phase 5: Reviews (1 day)
+### Phase 5: Search (1 day)
+
+**Objective:** Allow search of gigs by title
+* Create search feature for gigs by title, description, and category
+* Search automatically updates as user types in search bar
+* user can click on categories from nav bar to access gigs
+* test and review search
+
+### Phase 6: Reviews (1 day)
 
 **Objective:** Allow users to review their purchases
 
