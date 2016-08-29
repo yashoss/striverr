@@ -100,3 +100,26 @@
 * removeCartItem
   1. invoked from an API callback
   2. the CartReducer updates the cart from the application's state.
+
+### Review API Request Actions
+
+* requestReview
+  1. invoked onEnter of gig view page
+  2. GET /api/reviews
+  3. receiveReviews is set as the success callback.
+
+* createReview
+  1. invoked on submission from review form
+  2. POST /api/reviews
+  3. receiveReviews is set as the success callback
+
+* updateReview
+  1. invoked from review edit form
+  2. PATCH /api/reviews/:id
+  3. receiveReviews is set as the success callback.
+
+### Review API Response Actions
+
+* receiveReview
+  1. invoked by requestReview callback
+  2. the ReviewsReducer updates the reviews from the application's state.
