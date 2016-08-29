@@ -29,8 +29,8 @@
 |         Path                 |      Component          |
 |:-----------------------------|:------------------------|
 |"/"                           |"App"                    |
-|"/new_user"                   |"New user info form"     |
-|"/new_gig"                    |"New gig form"           |
-|"/gig/:id"                    |"View gig"               |
-|"/cart"                       |"Shopping cart"          |
-|"/users/:id"                  |"Dashboard"              |
+|"/api/new_user"               |"New user info form"     |
+|"/api/new_gig"                |"New gig form"           |
+|"/api/gig/:id"                |"View gig"               |
+|"/api/cart"                   |"Shopping cart"          |
+|"/api/users/:id"              |"Dashboard"              |
