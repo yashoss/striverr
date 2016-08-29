@@ -42,3 +42,13 @@
 | id | integer | not null, primary key |
 | user_id | integer | not null, foreign key, indexed |
 | gig_id | integer | not null, foreign key, indexed |
+
+## reviews
+
+|column name | data type | details |
+|:----------:|:---------:|:-------:|
+| id | integer | not null, primary key |
+| body | text | not null |
+| author_id | integer | foreign key, not null |
+| gig_id | integer | foreign key, not null |
+| rating | integer | not null |
