@@ -17,6 +17,7 @@ const personalGreeting = (currentUser, logout) => (
 );
 
 function Greeting({currentUser, logout}){
+  debugger;
   if (currentUser){
     return personalGreeting(currentUser, logout);
   } else {
