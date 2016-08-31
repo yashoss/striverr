@@ -38,7 +38,7 @@
 
  body {
      background-color: ghostwhite;
-     font-family: ubuntu;
+     font-family: 'Ubuntu', sans-serif;
  }
 
 .login-form {
