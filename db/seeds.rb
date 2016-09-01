@@ -9,3 +9,5 @@
 5.times do
   User.create!(username: Faker::Internet.user_name, password: "password", email: Faker::Internet.email)
 end
+
+User.create!(username: "Guest", password: "password", email: "guestemail@yopmail.com")

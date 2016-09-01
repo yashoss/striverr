@@ -6,6 +6,8 @@ const sessionLinks = () => (
     <Link to="/login" activeClassName="current">Login</Link>
     &nbsp;or&nbsp;
     <Link to="/signup" activeClassName="current">Sign up!</Link>
+    &nbsp;or&nbsp;
+    <Link to="/guest" activeClassName="current">Guest Login!</Link>
   </nav>
 );
 

@@ -22,21 +22,23 @@ class SessionForm extends React.Component {
 		}
 	}
 
+	componentDidMount(){
+		if(this.props.location.pathname === "/guest"){
+			setTimeout(() => {this.props.processForm({user: {username: "Guest", password: "password"}})}, 1000)
+		}
+	}
+
 	update(field){
 		return e => { this.setState({[field]: e.currentTarget.value }); };
 	}
 
 	handleSubmit(e){
 		e.preventDefault();
-		const user = this.state;
-		this.props.processForm({user});
-	}
-
-	navLink(){
-		if (this.props.formType === "login") {
-			return <Link to="/signup">sign up instead</Link>;
-		} else {
-			return <Link to="/login">log in instead</Link>;
+		if(this.props.location.pathname === "/guest"){
+			this.props.processForm({user: {username: "Guest", password: "password"}})
+		}else{
+			const user = this.state;
+			this.props.processForm({user});
 		}
 	}
 
@@ -93,7 +95,7 @@ class SessionForm extends React.Component {
 						</div>
 					</form>
 				</div>
-			)}else {
+			)}else if(currentRouteName === "/login"){
 				return(
 					<div className="login-form-container">
 						<form onSubmit={this.handleSubmit} className="login-form-box">
@@ -123,7 +125,39 @@ class SessionForm extends React.Component {
 							</div>
 						</form>
 					</div>
-			)}
+			)}else if (currentRouteName === "/guest") {
+				return(
+					<div className="login-form-container">
+						<form onSubmit={this.handleSubmit} className="login-form-box">
+							<h4 className="login-greet">Login to Striverr!</h4>
+							<br/>
+							{ this.renderErrors() }
+							<div className="login-form">
+								<br />
+
+								<label> Username:
+									<input type="text"
+										value="Guest"
+										className="login-input"
+										readOnly={true} />
+								</label>
+
+								<br />
+								<label> Password:
+									<input type="password"
+										value="password"
+										className="login-input"
+										readOnly={true} />
+								</label>
+
+								<br />
+								<input type="submit" value="Submit" />
+							</div>
+						</form>
+					</div>
+				)
+
+			}
 	}
 
 }
