@@ -18,6 +18,7 @@
 
 
 
+
   a.header-link {
       text-decoration: none;
       display: flex;
@@ -28,7 +29,7 @@
   header {
       background-color: #696969;
       /* justify-content: space-between; */
-      width: 988px;
+      width: 100%;
       margin: 0 auto;
       position: relative;
       display: block;
@@ -37,7 +38,7 @@
       /* min-height: 93px; */
   }
 
-  nav.login-signup {padding-right: 10%;padding-top: 2em;text-decoration: none;color: lightblue;display: inline-block;float: right;}
+  nav.login-signup {padding-right: 10%;padding-top: 1em;text-decoration: none;color: lightblue;display: inline-block;float: right;}
 
   header a:link {
       text-decoration: none;
@@ -56,6 +57,7 @@
       font-family: 'Ubuntu', sans-serif;
       min-width: 1008px;
       width: 100%;
+      margin: 0;
   }
 
  .login-form {
@@ -115,17 +117,22 @@
      width: 25%;
  }
 
- div {}
+ div#gigs-index {
+    width: 1400px;
+    margin: 0 auto;
+}
 
  #gigs-index ul {
      list-style: none;
      /* float: right; */
      background-color: aliceblue;
      display: flex;
-     /* width: 50%; */
+     /* width: 1400px; */
      /* height: 50vh; */
      /* justify-content: space-between; */
      margin: 0 auto;
+     /* padding-left: 250px; */
+     justify-content: center;
  }
 
  #gigs-index ul li img {
