@@ -15,7 +15,7 @@ export const requestGigs = () => ({
 });
 
 export const requestSingleGig = id => ({
-  type: GigsContants.REQUEST_SINGLE_GIG,
+  type: GigsConstants.REQUEST_SINGLE_GIG,
   id
 });
 

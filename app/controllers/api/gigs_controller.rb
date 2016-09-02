@@ -6,7 +6,7 @@ class Api::GigsController < ApplicationController
   end
 
   def index
-    @gigs = Gig.all.includes(:user)
+    @gigs = Gig.includes(:user).all
     render :index
   end
 
