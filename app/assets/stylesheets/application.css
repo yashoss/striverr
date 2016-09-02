@@ -17,6 +17,7 @@
 
 
 
+
   a.header-link {
       text-decoration: none;
       display: flex;
@@ -26,22 +27,35 @@
 
   header {
       background-color: #696969;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      height: 100%;
+      /* justify-content: space-between; */
+      width: 988px;
+      margin: 0 auto;
+      position: relative;
+      display: block;
+      position: relative;
+      text-decoration: none;
+      /* min-height: 93px; */
   }
 
-  nav.login-signup {padding-right: 10%;padding-top: 2em;text-decoration: none;color: lightblue;}
+  nav.login-signup {padding-right: 10%;padding-top: 2em;text-decoration: none;color: lightblue;display: inline-block;float: right;}
 
   header a:link {
       text-decoration: none;
+      text-transform: none;
       color: white;
+      padding: 8px 10px;
+      line-height: 46px;
+      font-weight: 400;
+      font-size: 14px;
+      display: inline-block;
+      /* position: relative; */
   }
 
   body {
       background-color: ghostwhite;
       font-family: 'Ubuntu', sans-serif;
+      min-width: 1008px;
+      width: 100%;
   }
 
  .login-form {
@@ -105,19 +119,20 @@
 
  #gigs-index ul {
      list-style: none;
-     float: right;
+     /* float: right; */
      background-color: aliceblue;
      display: flex;
-     width: 50%;
-     height: 50vh;
-     justify-content: space-between;
+     /* width: 50%; */
+     /* height: 50vh; */
+     /* justify-content: space-between; */
+     margin: 0 auto;
  }
 
  #gigs-index ul li img {
-     height: 50%;
-     width: 100%;
-     display: block;
-     border: solid gray 1px;
+     height: 130px;
+     width: 222px;
+     /* display: block; */
+     /* border: solid gray 1px; */
  }
 
- #gigs-index ul li {display: inline-block;width: 20%;height: 40%;margin: 1px;vertical-align: middle;background-color: white;transform: translateZ(0);box-shadow: 0 0 1px rgba(0, 0, 0, 0);backface-visibility: hidden;margin-right: 40px;border-radius: 5%;}
+ #gigs-index ul li {/* display: inline-block; */width: 232px;height: 260px;margin: 0 20px 20px 0;padding: 0;/* vertical-align: middle; */float: left;border: 1px #e5e5e5 solid;box-sizing: border-box;position: relative;background-color: white;/* transform: translateZ(0); *//* box-shadow: 0 0 1px rgba(0, 0, 0, 0); *//* backface-visibility: hidden; */margin-right: 40px;/* border-radius: 5%; */}
