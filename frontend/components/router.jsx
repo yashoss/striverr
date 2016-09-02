@@ -2,6 +2,7 @@ import React from 'react';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import GigsIndexContainer from './gigs/gigs_index_container';
 
 class AppRouter extends React.Component{
   constructor(props){
@@ -30,6 +31,7 @@ class AppRouter extends React.Component{
     return(
       <Router history={ hashHistory }>
         <Route path="/" component={ App }>
+          <IndexRoute component={ GigsIndexContainer } />
           <Route path="/login" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/signup" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/guest" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
