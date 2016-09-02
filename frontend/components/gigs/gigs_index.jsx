@@ -16,7 +16,7 @@ export default class GigsIndex extends React.Component{
     for (let key in this.gigs){
       gigs_list.push(
           <li key={key}>
-          <a href={`/api/gigs/${this.gigs[key].id}`}>
+          <a href={`/gigs/${key}`}>
           <img src={this.gigs[key].photo_url} />
           {this.gigs[key].title}
           <p>

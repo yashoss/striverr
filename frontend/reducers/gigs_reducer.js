@@ -5,6 +5,8 @@ const GigsReducer = function(state = {}, action){
   switch(action.type){
     case GigsConstants.RECEIVE_GIGS:
       return merge({}, state, action.gigs)
+    case GigsConstants.RECEIVE_SINGLE_GIG:
+      return merge({}, state, action.gig)
     default:
       return state;
   }

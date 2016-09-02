@@ -8,3 +8,12 @@ export const fetchGigs = function(success){
     error: () => console.log('error')
   })
 }
+
+export const fetchSingleGig = function(id, success){
+  $.ajax({
+    method: "GET",
+    url: `/api/gigs/${id}`,
+    success,
+    error: () => console.log('error')
+  })
+}

@@ -6,8 +6,8 @@ class Api::GigsController < ApplicationController
   end
 
   def index
-    @gigs = Gig.all
-    render json: @gigs
+    @gigs = Gig.all.includes(:user)
+    render :index
   end
 
   def patch
@@ -17,8 +17,8 @@ class Api::GigsController < ApplicationController
   end
 
   def show
-    @gig = Gig.find(params[:id])
-    render json: @gig
+    @gig = Gig.includes(:user).find(params[:id])
+    render :show
   end
 
 end
