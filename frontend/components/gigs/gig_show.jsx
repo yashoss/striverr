@@ -26,12 +26,12 @@ export default class GigShow extends React.Component{
           </div>
           <div className="gig-price-info">
             <ul>
-              <li key="{`${gig.id}-price'}">${gig.price}</li>
-              <li key="{`${gig.id}-delivery'}">Delivery time: {gig.delivery_time} days</li>
-              <li key="{`${gig.id}-revisions'}">upto: {gig.revisions} revisions</li>
-              <li key="{`${gig.id}-description'}"><h3>Description:</h3><p>{gig.description}</p></li>
+              <li className="gig-show-price">${gig.price}</li>
+              <li key="gig-show-dt">Delivery time: {gig.delivery_time} days</li>
+              <li key="gig-show-revisions">upto: {gig.revisions} revisions</li>
+              <li key="gig-show-description"><h3>Description:</h3><p>{gig.description}</p></li>
             </ul>
-            <button type="button">Place Order</button>
+            <button type="button" className="purchase-button">Place Order</button>
           </div>
           <div className="gig-user-info">{gig.user.username}</div>
         </div>

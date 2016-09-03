@@ -21,6 +21,8 @@
 
 
 
+
+
   a.header-link {
       text-decoration: none;
       display: flex;
@@ -117,6 +119,8 @@
 
  hgroup.header-group {
      width: 25%;
+     display: inline-block;
+     float: right;
  }
 
  div#gigs-index {
@@ -180,6 +184,8 @@ h1.gig-title {
     /* padding-right: 0; */
     width: 500px;
     float: left;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 100px;
 }
 
 div.gig-pic img {
@@ -200,9 +206,38 @@ ul {
 
 .gig-price-info {
     float: right;
+    width: 300px;
     position: relative;
+    margin-right: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
 }
 
 div.gig-price-info ul {}
 
 .gig-user-info {float: right;display: flex;height: 300px;width: 300px;justify-content: flex-start;padding: 10px;border: 1px solid lightgrey;background-color: aliceblue;margin: 10px;}
+
+.purchase-button {
+    border: 0;
+    background: #5786c1;
+    color: white;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1px 0px #3a587f, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae, 6px 5px #3a587f, 5px 6px #4171ae;
+}
+
+a.logout {
+    margin-top: 22px;
+}
+
+h2.header-name {
+    line-height: 50px;
+}
