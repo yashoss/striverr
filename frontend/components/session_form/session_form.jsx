@@ -66,29 +66,26 @@ class SessionForm extends React.Component {
 						<div className="login-form">
 							<br />
 
-							<label> Username:
 								<input type="text"
 									value={this.state.username}
 									onChange={this.update("username")}
+									placeholder="Username"
 									className="login-input" />
-							</label>
 							<br />
 
-							<label> E-mail:
 								<input type="text"
 									value={this.state.email}
 									onChange={this.update("email")}
+									placeholder="E-mail"
 									className="login-input"
 									id="email" />
-							</label>
 
 							<br />
-							<label> Password:
 								<input type="password"
 									value={this.state.password}
 									onChange={this.update("password")}
+									placeholder="Password"
 									className="login-input" />
-							</label>
 
 							<br />
 							<input type="submit" value="Submit" />
@@ -105,20 +102,18 @@ class SessionForm extends React.Component {
 							<div className="login-form">
 								<br />
 
-								<label> Username:
 									<input type="text"
 										value={this.state.username}
 										onChange={this.update("username")}
+										placeholder="Username"
 										className="login-input" />
-								</label>
 
 								<br />
-								<label> Password:
 									<input type="password"
 										value={this.state.password}
 										onChange={this.update("password")}
+										placeholder="Password"
 										className="login-input" />
-								</label>
 
 								<br />
 								<input type="submit" value="Submit" />
@@ -135,20 +130,18 @@ class SessionForm extends React.Component {
 							<div className="login-form">
 								<br />
 
-								<label> Username:
 									<input type="text"
 										value="Guest"
 										className="login-input"
+										placeholder="Username"
 										readOnly={true} />
-								</label>
 
 								<br />
-								<label> Password:
 									<input type="password"
 										value="password"
 										className="login-input"
+										placeholder="Password"
 										readOnly={true} />
-								</label>
 
 								<br />
 								<input type="submit" value="Submit" />

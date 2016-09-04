@@ -17,3 +17,12 @@ export const fetchSingleGig = function(id, success){
     error: () => console.log('error')
   })
 }
+
+export const createGig = (gig, success) => {
+  $.ajax({
+    method: 'POST',
+    url: '/api/gigs',
+    data: gig,
+    success
+  });
+};

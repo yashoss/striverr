@@ -1,8 +1,7 @@
 class Api::GigsController < ApplicationController
-  def new
-  end
-
   def create
+    @gig = Gig.create!(gig_params)
+    render :show
   end
 
   def index
@@ -19,6 +18,21 @@ class Api::GigsController < ApplicationController
   def show
     @gig = Gig.includes(:user).find(params[:id])
     render :show
+  end
+
+  private
+
+  def gig_params
+    params.require(:gig).permit(
+      :title,
+      :user_id,
+      :category,
+      :description,
+      :photo_url,
+      :delivery_time,
+      :revisions,
+      :price
+    )
   end
 
 end

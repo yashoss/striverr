@@ -23,6 +23,7 @@
 
 
 
+
   a.header-link {
       text-decoration: none;
       display: flex;
@@ -81,12 +82,14 @@
  input.login-input {
      margin: 5%;
      background-color: lightyellow;
+     padding: 7px 0 7px 100px;
  }
 
- input[type="submit"] {position: absolute;}
+ input[type="submit"] {
+    color: green;
+}
 
  input#email {
-     margin-left: 33px;
  }
 
  h4 {
@@ -240,4 +243,55 @@ a.logout {
 
 h2.header-name {
     line-height: 50px;
+}
+
+.new-gig-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    background-color: aliceblue;
+    height: 1000px;
+    margin-top: 90px;
+    padding-left: 250px;
+}
+
+form {}
+
+.new-gig-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input.gig-field {
+    display: block;
+    margin: 0 20px 20px 20px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+    background-color: lightyellow;
+}
+
+textarea.gig-field {
+    display: block;
+    margin: 0 20px 20px 20px;
+    padding-right: 275px;
+    background-color: lightyellow;
+    padding-bottom: 50px;
+
+}
+
+.new-gig-form select {
+    display: block;
+    margin: 0 20px 20px 20px;
+    padding: 5px;
+    width: 100px;
+}
+
+
+
+input.new-gig-button {
+    margin-left: 200px;
+    padding: 10px;
+    color: green;
 }

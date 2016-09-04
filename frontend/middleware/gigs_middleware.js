@@ -11,6 +11,10 @@ const GigsMiddleware = ({getState, dispatch}) => next => action => {
       const gotGig = data => dispatch(receiveSingleGig(data));
       fetchSingleGig(action.id, gotGig);
       return next(action);
+    case GigsConstants.CREATE_BENCH:
+      const madeGig = data => dispatch(receiveSingleGig(data));
+      createBench(action.gig, madeGig);
+      break;
     default:
       return next(action);
   }
