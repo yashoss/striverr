@@ -1,5 +1,5 @@
 import {GigsConstants, receiveGigs, receiveSingleGig} from '../actions/gigs_actions';
-import {fetchGigs, fetchSingleGig} from '../util/gigs_api_util';
+import {fetchGigs, fetchSingleGig, createGig} from '../util/gigs_api_util';
 
 const GigsMiddleware = ({getState, dispatch}) => next => action => {
   switch(action.type){
@@ -11,9 +11,9 @@ const GigsMiddleware = ({getState, dispatch}) => next => action => {
       const gotGig = data => dispatch(receiveSingleGig(data));
       fetchSingleGig(action.id, gotGig);
       return next(action);
-    case GigsConstants.CREATE_BENCH:
+    case GigsConstants.CREATE_GIG:
       const madeGig = data => dispatch(receiveSingleGig(data));
-      createBench(action.gig, madeGig);
+      createGig(action.gig, madeGig);
       break;
     default:
       return next(action);

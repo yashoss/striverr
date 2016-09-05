@@ -8,11 +8,11 @@ class NewGigForm extends React.Component{
     this.state = {
         user_id: this.props.currentUser.id,
         title: "",
-        category: "",
+        category: "Gaming",
         description: "",
         photo_url: "http://schneeblog.com/wp-content/uploads/2013/08/blank.jpg",
-        delivert_time: 1,
-        revisione: 1,
+        delivery_time: 1,
+        revisions: 1,
         price: 5
     };
     this.handleSubmit = this.handleSubmit.bind(this);
