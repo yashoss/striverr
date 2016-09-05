@@ -7,8 +7,8 @@ const mapDispatchToProps = dispatch => ({
 })
 
 const mapStateToProps = (state, ownProps)  => ({
-  gig: state.gigs[ownProps.params.id],
-  id: ownProps.params.id
+  gig: state.gigs[ownProps.id],
+  id: ownProps.id
 });
 
 export default connect(
