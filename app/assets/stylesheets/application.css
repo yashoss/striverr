@@ -25,6 +25,8 @@
 
 
 
+
+
   a.header-link {
       text-decoration: none;
       display: flex;
@@ -128,7 +130,7 @@
  }
 
  div#gigs-index {
-    width: 1200px;
+    width: 1105px;
     margin: 0 auto;
     margin-left: 200px;
 }
@@ -138,14 +140,14 @@
      /* float: right; */
      background-color: aliceblue;
      display: flex;
-     width: 1105px;
+     width: 1090px;
      /* height: 50vh; */
      /* justify-content: space-between; */
      /* margin: 0 auto; */
      /* padding-left: 250px; */
      /* justify-content: center; */
      padding-top: 20px;
-     cursor: pointer;
+     flex-wrap: wrap;
  }
 
  #gigs-index ul li img {
@@ -155,14 +157,14 @@
      /* border: solid gray 1px; */
  }
 
- #gigs-index ul li {/* display: inline-block; */width: 232px;height: 260px;margin: 0 20px 20px 0;padding: 0;/* vertical-align: middle; */float: left;border: 1px #e5e5e5 solid;box-sizing: border-box;position: relative;background-color: white;/* transform: translateZ(0); *//* box-shadow: 0 0 1px rgba(0, 0, 0, 0); *//* backface-visibility: hidden; */margin-right: 40px;/* border-radius: 5%; */}
+ #gigs-index ul li {/* display: inline-block; */width: 232px;height: 260px;margin: 0 20px 20px 0;padding: 0;/* vertical-align: middle; */float: left;border: 1px #e5e5e5 solid;box-sizing: border-box;position: relative;background-color: white;/* transform: translateZ(0); *//* box-shadow: 0 0 1px rgba(0, 0, 0, 0); *//* backface-visibility: hidden; */margin-right: 40px;cursor: pointer;/* border-radius: 5%; */}
 
  ul.nav-items {
      list-style: none;
      padding-left: 5px;
  }
 
- .nav-bar {background-color: lightcoral;width: 150px;height: 300px;margin-left: 10px;position: absolute;display: flex;flex-direction: column;}
+ .nav-bar {background-color: lightcoral;width: 150px;height: 300px;margin-left: 10px;position: absolute;display: flex;flex-direction: column;position: fixed;}
 
  li#gaming {background-color: lightcyan;padding: 10px 5px;margin: 10px 15px;display: flex;justify-content: center;}
  li#design {background-color: lightcyan;padding: 10px 5px;margin: 10px 15px;display: flex;justify-content: center;}

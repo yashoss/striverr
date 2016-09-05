@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 
 const sessionLinks = () => (
   <nav className="login-signup">
@@ -13,6 +13,7 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
+    <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
 		<h2 className="header-name">Hi, {currentUser.username}!</h2>
 		<a href="" className="logout" onClick={logout}>Log Out</a>
 	</hgroup>
