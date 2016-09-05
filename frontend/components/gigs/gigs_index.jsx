@@ -26,7 +26,7 @@ export default class GigsIndex extends React.Component{
           height          : '800px',
           border          : '1px solid #ccc',
           padding         : '20px',
-          backgroundColor : 'rgba(248, 88, 112, 0.56)'
+          backgroundColor : 'rgba(248, 88, 112, 0.30)'
         }
       }
     };
