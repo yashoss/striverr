@@ -3,4 +3,6 @@ class Gig < ActiveRecord::Base
       :delivery_time, :revisions, :price, presence: true
 
   belongs_to :user
+
+  has_many :carts
 end

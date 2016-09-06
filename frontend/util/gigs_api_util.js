@@ -26,3 +26,12 @@ export const createGig = (gig, success) => {
     success
   });
 };
+
+export const addCartItem = (cartItem, success) => {
+  $.ajax({
+    method: 'POST',
+    url: '/api/carts',
+    data: {cart: cartItem},
+    success
+  });
+};

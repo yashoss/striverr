@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Home from './home/home_container';
 import GigShowContainer from './gigs/gigs_show_container';
 import NewGigFormContainer from './gigs/new_gig_form_container';
+import CartsIndexContainer from './carts/carts_index_container';
 
 class AppRouter extends React.Component{
   constructor(props){
@@ -35,7 +36,7 @@ class AppRouter extends React.Component{
         <Route path="/" component={ App }>
           <IndexRoute component={ Home } />
           <Route path="/gigs/new" component={ NewGigFormContainer } />
-          // <Route path="/gigs/:id" component={ GigShowContainer } />
+          <Route path="/carts/:id" component={ CartsIndexContainer} />
           <Route path="/login" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/signup" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/guest" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>

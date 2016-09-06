@@ -3,7 +3,8 @@ export const GigsConstants = {
   REQUEST_GIGS: "REQUEST_GIGS",
   REQUEST_SINGLE_GIG: "REQUEST_SINGLE_GIG",
   RECEIVE_SINGLE_GIG: "RECEIVE_SINGLE_GIG",
-  CREATE_GIG: "CREATE_GIG"
+  CREATE_GIG: "CREATE_GIG",
+  ADD_CART_ITEM: "ADD_CART_ITEM"
 };
 
 export const receiveGigs = gigs => ({
@@ -29,3 +30,9 @@ export const createGig = gig => ({
   type: GigsConstants.CREATE_GIG,
   gig
 });
+
+export const addCartItem = (cartItem, success) => ({
+  type: GigsConstants.ADD_CART_ITEM,
+  cartItem,
+  success
+})

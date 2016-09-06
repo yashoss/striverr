@@ -40,6 +40,7 @@ export default class GigsIndex extends React.Component{
   closeModal(){
     this.setState({modal: false});
   }
+  
   componentDidMount(){
     this.props.requestGigs();
   }

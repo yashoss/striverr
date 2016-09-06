@@ -1,13 +1,24 @@
 import React from 'react';
+import {withRouter} from 'react-router';
 
-export default class GigShow extends React.Component{
+class GigShow extends React.Component{
 
   constructor(props){
     super(props)
+    this.cartItem = {
+      user_id: this.props.currentUser.id,
+      gig_id: this.props.id
+    }
   }
 
   componentDidMount(){
     this.props.requestSingleGig(this.props.id)
+  }
+
+  addToCart(e){
+    e.preventDefault();
+    const success = () => {this.props.router.push(`/carts/${this.props.currentUser.id}`)}
+    this.props.addCartItem(this.cartItem, success);
   }
 
   render(){
@@ -31,10 +42,12 @@ export default class GigShow extends React.Component{
                   <li key="gig-show-revisions">upto: {gig.revisions} revisions</li>
                   <li key="gig-show-description"><h3>Description:</h3><p>{gig.description}</p></li>
                 </ul>
-                <button type="button" className="purchase-button">Place Order</button>
+                <button type="button" className="purchase-button" onClick={this.addToCart.bind(this)}>Place Order</button>
               </div>
               <div className="gig-user-info">{gig.user.username}</div>
             </div>
       )}
   };
 }
+
+export default withRouter(GigShow);
