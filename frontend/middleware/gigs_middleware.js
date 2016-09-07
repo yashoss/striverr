@@ -1,5 +1,5 @@
-import {GigsConstants, receiveGigs, receiveSingleGig} from '../actions/gigs_actions';
-import {fetchGigs, fetchSingleGig, createGig, addCartItem} from '../util/gigs_api_util';
+import {GigsConstants, receiveGigs, receiveSingleGig, receiveCartItems} from '../actions/gigs_actions';
+import {fetchGigs, fetchSingleGig, createGig, addCartItem, fetchCartItems} from '../util/gigs_api_util';
 
 const GigsMiddleware = ({getState, dispatch}) => next => action => {
   switch(action.type){
@@ -17,6 +17,10 @@ const GigsMiddleware = ({getState, dispatch}) => next => action => {
       break;
     case GigsConstants.ADD_CART_ITEM:
       addCartItem(action.cartItem, action.success);
+      return next(action);
+    case GigsConstants.REQUEST_CART_ITEMS:
+      const gotItems = data => dispatch(receiveCartItems(data))
+      fetchCartItems(action.user_id, gotItems);
       return next(action);
     default:
       return next(action);

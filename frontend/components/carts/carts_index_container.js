@@ -8,7 +8,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state, ownProps) => ({
   cartItems: state.cartItems,
-  id: ownProps.params.id
+  user_id: state.session.currentUser.id
 });
 
 export default connect(

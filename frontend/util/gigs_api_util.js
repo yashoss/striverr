@@ -35,3 +35,12 @@ export const addCartItem = (cartItem, success) => {
     success
   });
 };
+
+export const fetchCartItems = (user_id, success) => {
+  $.ajax({
+    method: 'GET',
+    url: `/api/carts`,
+    data: {user_id},
+    success
+  });
+}

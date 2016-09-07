@@ -4,9 +4,9 @@ class Api::CartsController < ApplicationController
     render json: {}
   end
 
-  def show
-    @cart = Cart.includes(:gigs).find_by_user_id(params[:user_id])
-    render :show
+  def index
+    @cart = Cart.where(user_id: params[:user_id]).includes(:gig)
+    render :index
   end
 
   def patch

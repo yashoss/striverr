@@ -7,11 +7,13 @@ export default class CartsIndex extends React.Component{
   }
 
   componentDidMount(){
-    this.props.requestCartItems(this.props.id);
+    this.props.requestCartItems(this.props.user_id);
   }
 
   render(){
-    this.cartItems = this.props.cartItems;
+    const cartItems = this.props.cartItems;
+    debugger;
+  
     return(
       <div>Your cart</div>
     )
