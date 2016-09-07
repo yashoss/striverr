@@ -6,7 +6,9 @@ export const GigsConstants = {
   CREATE_GIG: "CREATE_GIG",
   ADD_CART_ITEM: "ADD_CART_ITEM",
   REQUEST_CART_ITEMS: "REQUEST_CART_ITEMS",
-  RECEIVE_CART_ITEMS: "RECEIVE_CART_ITEMS"
+  RECEIVE_CART_ITEMS: "RECEIVE_CART_ITEMS",
+  REMOVE_CART_ITEM: "REMOVE_CART_ITEM",
+  REPLACE_CART_ITEMS: "REPLACE_CART_ITEMS"
 };
 
 export const receiveGigs = gigs => ({
@@ -46,5 +48,15 @@ export const requestCartItems = user_id => ({
 
 export const receiveCartItems = cartItems => ({
   type: GigsConstants.RECEIVE_CART_ITEMS,
+  cartItems
+});
+
+export const removeCartItem = id => ({
+  type: GigsConstants.REMOVE_CART_ITEM,
+  id
+});
+
+export const replaceCartItems = cartItems => ({
+  type: GigsConstants.REPLACE_CART_ITEMS,
   cartItems
 });

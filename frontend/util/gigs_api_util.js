@@ -43,4 +43,12 @@ export const fetchCartItems = (user_id, success) => {
     data: {user_id},
     success
   });
-}
+};
+
+export const removeCartItem = (id, success) => {
+  $.ajax({
+    method: 'DELETE',
+    url: `/api/carts/${id}`,
+    success
+  });
+};

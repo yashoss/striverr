@@ -13,6 +13,11 @@ class Api::CartsController < ApplicationController
   end
 
   def destroy
+    @cart = Cart.find(params[:id])
+    user_id = @cart.user_id
+    @cart.destroy
+    @cart = Cart.where(user_id: user_id).includes(:gig)
+    render :index
   end
 
   private
