@@ -10,6 +10,7 @@ json.gigs do
       json.delivery_time gig.delivery_time
       json.revisions gig.revisions
       json.description gig.description
+      json.gig_views gig.gig_views
     end
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160907191013) do
+ActiveRecord::Schema.define(version: 20160908003511) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,17 +27,17 @@ ActiveRecord::Schema.define(version: 20160907191013) do
   add_index "carts", ["user_id"], name: "index_carts_on_user_id", using: :btree
 
   create_table "gigs", force: :cascade do |t|
-    t.integer  "user_id",       null: false
-    t.string   "title",         null: false
-    t.string   "category",      null: false
-    t.text     "description",   null: false
+    t.integer  "user_id",                   null: false
+    t.string   "title",                     null: false
+    t.string   "category",                  null: false
+    t.text     "description",               null: false
     t.string   "photo_url"
-    t.integer  "delivery_time", null: false
-    t.integer  "revisions",     null: false
-    t.float    "price",         null: false
-    t.integer  "gig_views"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "delivery_time",             null: false
+    t.integer  "revisions",                 null: false
+    t.float    "price",                     null: false
+    t.integer  "gig_views",     default: 0
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   add_index "gigs", ["gig_views"], name: "index_gigs_on_gig_views", using: :btree
