@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160906162351) do
+ActiveRecord::Schema.define(version: 20160907191013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,13 +44,16 @@ ActiveRecord::Schema.define(version: 20160906162351) do
   add_index "gigs", ["user_id"], name: "index_gigs_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "username",        null: false
-    t.string   "email",           null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token",   null: false
+    t.string   "username",                    null: false
+    t.string   "email",                       null: false
+    t.string   "password_digest",             null: false
+    t.string   "session_token",               null: false
     t.integer  "views"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.text     "description"
+    t.string   "photo_url"
+    t.integer  "profile_views",   default: 0
   end
 
 end

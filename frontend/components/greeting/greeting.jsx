@@ -14,6 +14,7 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
     <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
+    <Link to={`/carts/${currentUser.id}`} activeClassName="current">Cart</Link>
 		<h2 className="header-name">Hi, {currentUser.username}!</h2>
 		<a href="" className="logout" onClick={logout}>Log Out</a>
 	</hgroup>

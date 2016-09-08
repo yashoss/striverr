@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
 		foreign_key: :user_id,
 		class_name: :Gig
 
-	has_one :cart
+	has_many :carts
 
 	def password= password
 		self.password_digest = BCrypt::Password.create(password)
