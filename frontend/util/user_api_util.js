@@ -1,4 +1,4 @@
-export const fetchUser = (id, success) => {
+export const fetchUser = (id, success, fromProps) => {
   $.ajax({
     method: 'GET',
     url: `/api/users/${id}`,

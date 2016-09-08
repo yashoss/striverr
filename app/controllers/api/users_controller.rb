@@ -13,6 +13,10 @@ class Api::UsersController < ApplicationController
 
 	def show
 		@user = User.includes(:gigs, :carts).find(params[:id])
+		unless (current_user && current_user.id == @user.id)
+			@user.profile_views += 1
+			@user.save
+		end
 		render :show
 	end
 

@@ -23,7 +23,7 @@ export default class GigsIndex extends React.Component{
         content : {
           margin          : 'auto',
           width           : '1000px',
-          height          : '800px',
+          height          : '680px',
           border          : '1px solid #ccc',
           padding         : '20px',
           backgroundColor : 'rgba(248, 88, 112, 0.30)'
@@ -40,7 +40,7 @@ export default class GigsIndex extends React.Component{
   closeModal(){
     this.setState({modal: false});
   }
-  
+
   componentDidMount(){
     this.props.requestGigs();
   }

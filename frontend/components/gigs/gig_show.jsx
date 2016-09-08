@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router';
+import {withRouter, hashHistory} from 'react-router';
 
 class GigShow extends React.Component{
 
@@ -27,6 +27,10 @@ class GigShow extends React.Component{
     }
   }
 
+  goToUser(id){
+    hashHistory.push(`/users/${id}`);
+  }
+
   render(){
     const gig = this.props.gig;
     if(!gig){
@@ -43,14 +47,21 @@ class GigShow extends React.Component{
               </div>
               <div className="gig-price-info">
                 <ul>
-                  <li className="gig-show-price">${gig.price}</li>
-                  <li key="gig-show-dt">Delivery time: {gig.delivery_time} days</li>
-                  <li key="gig-show-revisions">upto: {gig.revisions} revisions</li>
-                  <li key="gig-show-description"><h3>Description:</h3><p>{gig.description}</p></li>
+                  <li className="gig-show-price">Price: ${gig.price}</li>
+                  <li className="gig-show-dt">Delivery time: {gig.delivery_time} days</li>
+                  <li className="gig-show-revisions">upto: {gig.revisions} revisions</li>
+                  <li className="gig-show-description"><h3>Description:</h3><p>{gig.description}</p></li>
                 </ul>
                 <button type="button" className="purchase-button" onClick={this.addToCart.bind(this)}>Place Order</button>
               </div>
-              <div className="gig-user-info">{gig.user.username}</div>
+                <div className="gig-user-info">
+                <a onClick={this.goToUser.bind(this, gig.user.id)}>
+                <span className="gig-username">{gig.user.username}</span>
+                  <img src={gig.user.photo_url} className="gig-user-pic" />
+              </a>
+                  <h5 className="about-header">About me:</h5>
+                  <p className="gig-user-description">{gig.user.description}</p>
+                </div>
             </div>
       )}
   };

@@ -17,6 +17,10 @@ class Api::GigsController < ApplicationController
 
   def show
     @gig = Gig.includes(:user).find(params[:id])
+    unless(current_user && current_user.id == @gig.user_id)
+      @gig.gig_views += 1
+      @gig.save
+    end
     render :show
   end
 

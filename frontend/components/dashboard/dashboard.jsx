@@ -58,21 +58,27 @@ export default class Dashboard extends React.Component{
       <div className="dashboard">
         <h1 className="username">{user.username}</h1>
         <img src={user.photo_url} className="profile-pic" />
+        <div className="profile-info">
         <div className="stats">
-          <h2 className="stats-header">Statistics</h2>
-          <div className="stats-container">
-            <span className="user-orders">
-              <h3 className="orders-header">Orders</h3>
-              <h4 className="orders-stats">TBD</h4>
-            </span>
-            <span className="users-gig-views">
-              <h3 className="gig-views-header">Gig Views</h3>
-              <h4 className="gig-views">{gig_views}</h4>
-            </span>
-            <span className="users-profile-views">
-              <h3 className="profile-views-header">Profile Views</h3>
-              <h4 className="profile-views">{user.profile_views}</h4>
-            </span>
+            <h2 className="stats-header">Statistics</h2>
+              <div className="stats-container">
+                <span className="user-orders">
+                  <h3 className="orders-header">Orders</h3>
+                  <h4 className="orders-stats">TBD</h4>
+                </span>
+                <span className="users-gig-views">
+                  <h3 className="gig-views-header">Gig Views</h3>
+                  <h4 className="gig-views">{gig_views}</h4>
+                </span>
+                <span className="users-profile-views">
+                  <h3 className="profile-views-header">Profile Views</h3>
+                  <h4 className="profile-views">{user.profile_views}</h4>
+                </span>
+              </div>
+            </div>
+            <div className="user-description">
+            <h2 className="user-description-header">Description:</h2>
+              <p>{user.description}</p>
           </div>
         </div>
       </div>
