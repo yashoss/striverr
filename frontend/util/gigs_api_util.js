@@ -52,3 +52,20 @@ export const removeCartItem = (id, success) => {
     success
   });
 };
+
+export const removeGig = (id, success) => {
+  $.ajax({
+    method: 'DELETE',
+    url: `/api/gigs/${id}`,
+    success
+  });
+};
+
+export const updateGig = (gig, success, id) => {
+  $.ajax({
+    method: 'PATCH',
+    url: `/api/gigs/${id}`,
+    data: gig,
+    success
+  });
+};

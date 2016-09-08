@@ -11,18 +11,22 @@ const sessionLinks = () => (
   </nav>
 );
 
-const personalGreeting = (currentUser, logout) => (
+const personalGreeting = (currentUser, logout, goToUser) => (
 	<hgroup className="header-group">
     <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
     <Link to={`/carts/${currentUser.id}`} activeClassName="current">Cart</Link>
-		<h2 className="header-name">Hi, {currentUser.username}!</h2>
+		<a href="" onClick={goToUser.bind(null, currentUser.id)}><h2 className="header-name">Hi, {currentUser.username}!</h2></a>
 		<a href="" className="logout" onClick={logout}>Log Out</a>
 	</hgroup>
 );
 
+const goToUser = (id) => {
+  hashHistory.push(`/users/${id}`);
+};
+
 function Greeting({currentUser, logout}){
   if (currentUser){
-    return personalGreeting(currentUser, logout);
+    return personalGreeting(currentUser, logout, goToUser);
   } else {
     return sessionLinks();
   }

@@ -1,9 +1,11 @@
 import {connect} from 'react-redux';
 import {requestUser} from '../../actions/user_actions';
+import {removeGig} from '../../actions/gigs_actions';
 import Dashboard from './dashboard';
 
 const mapDispatchToProps = dispatch => ({
-  requestUser: id => dispatch(requestUser(id))
+  requestUser: id => dispatch(requestUser(id)),
+  removeGig: (id, success) => dispatch(removeGig(id, success))
 });
 
 const mapStateToProps = (state, ownProps) => ({

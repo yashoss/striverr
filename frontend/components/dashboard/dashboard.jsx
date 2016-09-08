@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, hashHistory} from 'react-router';
 
 export default class Dashboard extends React.Component{
 
@@ -16,7 +16,8 @@ export default class Dashboard extends React.Component{
   }
 
   removeGig(id){
-    console.log(`Will remove gig # ${id}`)
+    const success = () => {hashHistory.push(`/users/${this.props.currentUser.id}`)};
+    this.props.removeGig(id, success);
   }
 
   render(){
@@ -30,8 +31,8 @@ export default class Dashboard extends React.Component{
       if(this.props.currentUser && this.props.currentUser.id === user.id){
         userLinks = () => (
           <div className="user-gig-links">
-            <Link to={`/gigs/${gig.id}`} activeClassName="edit-gig">Edit</Link>
-            <a href={window.location.href=window.location.href} onClick={this.removeGig.bind(this, gig.id)} className="remove-cart">Delete</a>
+            <Link to={`/gigs/${gig.id}/edit`} activeClassName="edit-gig">Edit</Link>
+            <a href={window.location.href=window.location.href} onClick={this.removeGig.bind(this, gig.id)} className="remove-gig">Delete</a>
           </div>
         );
       }else{

@@ -9,10 +9,16 @@ class Api::GigsController < ApplicationController
     render :index
   end
 
-  def patch
+  def update
+    @gig = Gig.update(params[:id], gig_params)
+    render json: {}
   end
 
   def destroy
+    @gig = Gig.find(params[:id])
+    user_id = @gig.user_id
+    @gig.destroy
+    render json: {}
   end
 
   def show
