@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160908003511) do
+ActiveRecord::Schema.define(version: 20160909000436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,25 @@ ActiveRecord::Schema.define(version: 20160908003511) do
 
   add_index "gigs", ["gig_views"], name: "index_gigs_on_gig_views", using: :btree
   add_index "gigs", ["user_id"], name: "index_gigs_on_user_id", using: :btree
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "gig_id",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "author_id",                null: false
+    t.integer  "gig_id",                   null: false
+    t.text     "body",                     null: false
+    t.float    "rating",     default: 0.0
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "reviews", ["author_id"], name: "index_reviews_on_author_id", using: :btree
+  add_index "reviews", ["gig_id"], name: "index_reviews_on_gig_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",                    null: false

@@ -5,4 +5,9 @@ class Gig < ActiveRecord::Base
   belongs_to :user
 
   has_many :carts
+
+  has_many :reviews
+
+  has_many :orders
+
 end

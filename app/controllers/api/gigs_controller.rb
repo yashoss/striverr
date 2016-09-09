@@ -5,7 +5,11 @@ class Api::GigsController < ApplicationController
   end
 
   def index
-    @gigs = Gig.includes(:user).all
+    if(params[:category] == nil || params[:category] == "all")
+      @gigs = Gig.includes(:user, :reviews).all
+    else
+      @gigs = Gig.where(category: params[:category]).includes(:user, :reviews)
+    end
     render :index
   end
 
@@ -22,7 +26,7 @@ class Api::GigsController < ApplicationController
   end
 
   def show
-    @gig = Gig.includes(:user).find(params[:id])
+    @gig = Gig.includes(:user, :reviews).find(params[:id])
     unless(current_user && current_user.id == @gig.user_id)
       @gig.gig_views += 1
       @gig.save

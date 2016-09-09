@@ -16,8 +16,7 @@ export default class Dashboard extends React.Component{
   }
 
   removeGig(id){
-    const success = () => {hashHistory.push(`/users/${this.props.currentUser.id}`)};
-    this.props.removeGig(id, success);
+    this.props.removeGig(id);
   }
 
   render(){
@@ -42,7 +41,7 @@ export default class Dashboard extends React.Component{
         );
       };
       gigs_array.push(
-          <li key={`${user.id}-gig-${gig.id}`}>
+          <li  key={`${user.id}-gig-${gig.id}`}>
             <div className="left-side-user-gig">
               <h3 className="user-gig-title">{gig.title}</h3>
               <img className="user-gig-img" src={gig.photo_url} />

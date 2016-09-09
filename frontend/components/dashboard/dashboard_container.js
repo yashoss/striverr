@@ -5,7 +5,7 @@ import Dashboard from './dashboard';
 
 const mapDispatchToProps = dispatch => ({
   requestUser: id => dispatch(requestUser(id)),
-  removeGig: (id, success) => dispatch(removeGig(id, success))
+  removeGig: (id) => dispatch(removeGig(id))
 });
 
 const mapStateToProps = (state, ownProps) => ({

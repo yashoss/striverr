@@ -10,7 +10,10 @@ export const GigsConstants = {
   REMOVE_CART_ITEM: "REMOVE_CART_ITEM",
   REPLACE_CART_ITEMS: "REPLACE_CART_ITEMS",
   REMOVE_GIG: "REMOVE_GIG",
-  EDIT_GIG: "EDIT_GIG"
+  EDIT_GIG: "EDIT_GIG",
+  REPLACE_GIGS: "REPLACE_GIGS",
+  REQUEST_GIGS_CATEGORY: "REQUEST_GIGS_CATEGORY",
+  CHECKOUT: "CHECKOUT"
 };
 
 export const receiveGigs = gigs => ({
@@ -19,7 +22,7 @@ export const receiveGigs = gigs => ({
 });
 
 export const requestGigs = () => ({
-  type: GigsConstants.REQUEST_GIGS
+  type: GigsConstants.REQUEST_GIGS,
 });
 
 export const requestSingleGig = id => ({
@@ -63,10 +66,14 @@ export const replaceCartItems = cartItems => ({
   cartItems
 });
 
-export const removeGig = (id, success) => ({
+export const replaceGigs = gigs => ({
+  type: GigsConstants.REPLACE_GIGS,
+  gigs
+});
+
+export const removeGig = (id) => ({
   type: GigsConstants.REMOVE_GIG,
-  id,
-  success
+  id
 });
 
 export const editGig = (gig, id) => ({
@@ -74,3 +81,13 @@ export const editGig = (gig, id) => ({
   gig: gig,
   id: id
 });
+
+export const requestGigsCategory = category => ({
+  type: GigsConstants.REQUEST_GIGS_CATEGORY,
+  category
+});
+
+export const checkout = id => ({
+  type: GigsConstants.CHECKOUT,
+  id
+})

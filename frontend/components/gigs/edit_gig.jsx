@@ -54,12 +54,12 @@ class EditGigForm extends React.Component{
               onChange={this.update("title")} className="gig-field"/>
 
             <label className="gig-field">Category: </label>
-            <select>
-              <option value="gaming" onSelect={this.update("category")}>Gaming</option>
-              <option value="design" onSelect={this.update("category")}>Design</option>
-              <option value="web-dev" onSelect={this.update("category")}>Web-Dev</option>
-              <option value="art" onSelect={this.update("category")}>Art</option>
-              <option value="writing" onSelect={this.update("category")}>Writing</option>
+            <select onChange={this.update("category")} value={this.state.category}>
+              <option value="gaming">Gaming</option>
+              <option value="design">Design</option>
+              <option value="web-dev">Web-Dev</option>
+              <option value="art">Art</option>
+              <option value="writing">Writing</option>
             </select>
 
             <label className="gig-field">Description: </label>
@@ -71,30 +71,30 @@ class EditGigForm extends React.Component{
               onChange={this.update("photo_url")} className="gig-field"/>
 
             <label className="gig-field">Delivery Time: </label>
-            <select>
-              <option value={1} onSelect={this.update("delivery_time")}>1 day</option>
-              <option value={2} onSelect={this.update("delivery_time")}>2 day</option>
-              <option value={3} onSelect={this.update("delivery_time")}>3 day</option>
-              <option value={4} onSelect={this.update("delivery_time")}>4 day</option>
-              <option value={5} onSelect={this.update("delivery_time")}>5 day</option>
+            <select onChange={this.update("delivery_time")} value={this.state.delivery_time}>
+              <option value={1}>1 day</option>
+              <option value={2}>2 day</option>
+              <option value={3}>3 day</option>
+              <option value={4}>4 day</option>
+              <option value={5}>5 day</option>
             </select>
 
             <label className="gig-field">Revisions: </label>
-            <select>
-              <option value={1} onSelect={this.update("revisions")}>1</option>
-              <option value={2} onSelect={this.update("revisions")}>2</option>
-              <option value={3} onSelect={this.update("revisions")}>3</option>
-              <option value={4} onSelect={this.update("revisions")}>4</option>
-              <option value={5} onSelect={this.update("revisions")}>5</option>
+            <select onChange={this.update("revisions")} value={this.state.revisions}>
+              <option value={1}>1</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={4}>4</option>
+              <option value={5}>5</option>
             </select>
 
             <label className="gig-field">price: </label>
-            <select>
-              <option value={5} onSelect={this.update("price")}>$5</option>
-              <option value={10} onSelect={this.update("price")}>$10</option>
-              <option value={25} onSelect={this.update("price")}>$25</option>
-              <option value={50} onSelect={this.update("price")}>$50</option>
-              <option value={100} onSelect={this.update("price")}>$100</option>
+            <select onChange={this.update("price")} value={this.state.price}>
+              <option value={5}>$5</option>
+              <option value={10}>$10</option>
+              <option value={25}>$25</option>
+              <option value={50}>$50</option>
+              <option value={100}>$100</option>
             </select>
 
             <div className="button-holder">

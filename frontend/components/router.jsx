@@ -8,6 +8,7 @@ import NewGigFormContainer from './gigs/new_gig_form_container';
 import CartsIndexContainer from './carts/carts_index_container';
 import DashboardContainer from './dashboard/dashboard_container';
 import EditGigContainer from './gigs/edit_gig_container';
+import CheckoutContainer from './carts/checkout_container';
 
 class AppRouter extends React.Component{
   constructor(props){
@@ -41,6 +42,7 @@ class AppRouter extends React.Component{
           <Route path="/users/:id" component={ DashboardContainer } />
           <Route path="/gigs/new" component={ NewGigFormContainer } />
           <Route path="/carts/:id" component={ CartsIndexContainer} />
+          <Route path="/checkout" component={ CheckoutContainer } />
           <Route path="/login" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/signup" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>
           <Route path="/guest" component={ SessionFormContainer } onEnter={this._redirectIfLoggedIn}/>

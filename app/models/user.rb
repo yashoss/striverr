@@ -16,6 +16,21 @@ class User < ActiveRecord::Base
 
 	has_many :carts
 
+	has_many :written_reviews,
+		primary_key: :id,
+		foreign_key: :author_id,
+		class_name: :Review
+
+	has_many :reviews,
+		through: :gigs,
+		source: :reviews
+
+	has_many :orders
+
+	has_many :sells,
+		through: :gigs,
+		source: :orders
+
 	def password= password
 		self.password_digest = BCrypt::Password.create(password)
 		@password = password

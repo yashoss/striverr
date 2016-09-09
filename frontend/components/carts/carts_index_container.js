@@ -1,10 +1,11 @@
 import {connect} from 'react-redux';
-import {requestCartItems, removeCartItem} from '../../actions/gigs_actions';
+import {requestCartItems, removeCartItem, checkout} from '../../actions/gigs_actions';
 import CartsIndex from './carts_index';
 
 const mapDispatchToProps = dispatch => ({
   requestCartItems: (id) => dispatch(requestCartItems(id)),
-  removeCartItem: (id) => dispatch(removeCartItem(id))
+  removeCartItem: (id) => dispatch(removeCartItem(id)),
+  checkout: id => dispatch(checkout(id))
 });
 
 const mapStateToProps = (state, ownProps) => ({

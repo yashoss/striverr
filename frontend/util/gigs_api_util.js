@@ -4,6 +4,7 @@ export const fetchGigs = function(success){
   $.ajax({
     method: "GET",
     url: "/api/gigs",
+    data: {category: "all"},
     success,
     error: () => console.log('error')
   })
@@ -66,6 +67,25 @@ export const updateGig = (gig, success, id) => {
     method: 'PATCH',
     url: `/api/gigs/${id}`,
     data: gig,
+    success
+  });
+};
+
+export const filterGigs = function(category, success){
+  $.ajax({
+    method: "GET",
+    url: "/api/gigs",
+    data: {category: category},
+    success,
+    error: () => console.log('error')
+  });
+};
+
+export const checkout = (id, success) => {
+  $.ajax({
+    method: 'DELETE',
+    data: {user_id: id, type: "co"},
+    url: `/api/carts/${id}`,
     success
   });
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import {withRouter, hashHistory} from 'react-router';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 class GigShow extends React.Component{
 
@@ -16,6 +17,8 @@ class GigShow extends React.Component{
   componentDidMount(){
     this.props.requestSingleGig(this.props.id)
   }
+
+  
 
   addToCart(e){
     e.preventDefault();
@@ -38,6 +41,24 @@ class GigShow extends React.Component{
         <h1>loading</h1>
       )
     }else{
+      const reviewsArray = [];
+      for(let key in gig.reviews){
+        let review = gig.reviews[key];
+        reviewsArray.push(
+          <li key={`review-${key}`} className="review-item">
+            <div className="reviewer">
+              <a href={`/#/users/${review.author_id}`} className="link-to-user">
+                <p className="reviewer-username">{review.author}</p>
+                <img className="reviewer-pic" src={review.pic} />
+              </a>
+            </div>
+            <div className="review-gut">
+              <span className="review-rating">rated: {review.rating}/5</span>
+              <p className="review-body">{review.body}</p>
+            </div>
+          </li>
+        )
+      }
       return(
             <div className="gig-show-container">
               <h1 className="gig-title">{gig.title}</h1>
@@ -61,6 +82,12 @@ class GigShow extends React.Component{
               </a>
                   <h5 className="about-header">About me:</h5>
                   <p className="gig-user-description">{gig.user.description}</p>
+                </div>
+                <ReviewFormContainer id={gig.id} />
+                <div className="reviews-container">
+                  <ul className="reviews-list">
+                    {reviewsArray}
+                  </ul>
                 </div>
             </div>
       )}

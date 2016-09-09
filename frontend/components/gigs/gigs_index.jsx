@@ -2,6 +2,7 @@ import React from 'react';
 import {hashHistory} from 'react-router';
 import Modal from 'react-modal';
 import GigShowContainer from './gigs_show_container';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 export default class GigsIndex extends React.Component{
   constructor(props){
@@ -18,18 +19,22 @@ export default class GigsIndex extends React.Component{
           left            : 0,
           right           : 0,
           bottom          : 0,
-          backgroundColor : 'rgba(255, 255, 255, 0.75)'
+          backgroundColor : 'rgba(255, 255, 255, 0.75)',
+          zIndex          : 999,
+          transition      : "all 1s ease"
         },
         content : {
           margin          : 'auto',
           width           : '1000px',
-          height          : '680px',
+          height          : '85%',
           border          : '1px solid #ccc',
           padding         : '20px',
-          backgroundColor : 'rgba(248, 88, 112, 0.30)'
+          backgroundColor : 'rgba(156, 174, 190, 0.79)'
+
         }
       }
     };
+
 
   }
 
@@ -55,11 +60,19 @@ export default class GigsIndex extends React.Component{
     for (let key in this.gigs){
       gigs_list.push(
           <li key={key} onClick={this.openModal.bind(this, key)}>
+          <div className="holder">
+          <div className="image">
           <img src={this.gigs[key].photo_url} />
           {this.gigs[key].title}
           <p>
             ${this.gigs[key].price}
           </p>
+            <div className="details">
+              <h1>{this.gigs[key].user.username}</h1>
+              <p>{this.gigs[key].description}</p>
+            </div>
+          </div>
+          </div>
           </li>
         )
     }
@@ -68,7 +81,7 @@ export default class GigsIndex extends React.Component{
         <ul>
           {gigs_list}
         </ul>
-        <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)} style={this.state.style}>
+        <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
           <GigShowContainer id={this.state.key}/>
         </Modal>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, hashHistory } from 'react-router';
 
 export default class CartsIndex extends React.Component{
 
@@ -16,6 +16,12 @@ export default class CartsIndex extends React.Component{
     this.props.removeCartItem(id);
   }
 
+  checkout(){
+    this.props.checkout(this.props.user_id);
+    hashHistory.push("/checkout");
+  }
+
+
   render(){
     const cartItems = this.props.cartItems;
     const cart = [];
@@ -31,7 +37,7 @@ export default class CartsIndex extends React.Component{
           <div className="cart-detial-options">
             <span className="rev">Revisions: {item.revisions}</span>
             <span className="delivery_time">Delivery Time: {item.delivery_time}</span>
-            <a href={window.location.href=window.location.href} onClick={this.removeCartItem.bind(this, key)} className="remove-cart">Remove</a>
+            <a href={window.location.href=window.location.href} onClick={this.removeCartItem.bind(this)} className="remove-cart">Remove</a>
           </div>
         </li>
       );
@@ -48,7 +54,7 @@ export default class CartsIndex extends React.Component{
             <div className="checkout-container">
               <span className="price">Total: ${total}</span>
                 <section className="gradient">
-                  <button type="button" className="checkout">
+                  <button type="button" onClick={this.checkout.bind(this, this.props.cartItems)} className="checkout">
                     Checkout
                   </button>
                 </section>

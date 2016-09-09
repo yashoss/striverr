@@ -1,5 +1,7 @@
-import {GigsConstants, receiveGigs, receiveSingleGig, receiveCartItems, replaceCartItems} from '../actions/gigs_actions';
-import {fetchGigs, fetchSingleGig, createGig, addCartItem, fetchCartItems, removeCartItem, removeGig, updateGig} from '../util/gigs_api_util';
+import {GigsConstants, receiveGigs, receiveSingleGig, receiveCartItems, replaceCartItems, replaceGigs} from '../actions/gigs_actions';
+import {fetchGigs, fetchSingleGig, createGig, addCartItem, fetchCartItems, removeCartItem,
+   removeGig, updateGig, filterGigs, checkout} from '../util/gigs_api_util';
+import {receiveOrders} from '../actions/order_actions';
 
 const GigsMiddleware = ({getState, dispatch}) => next => action => {
   switch(action.type){
@@ -27,12 +29,20 @@ const GigsMiddleware = ({getState, dispatch}) => next => action => {
       removeCartItem(action.id, cartItems);
       return next(action);
     case GigsConstants.REMOVE_GIG:
-      removeGig(action.id, action.success);
+      const gigs = data => dispatch(replaceGigs(data));
+      removeGig(action.id, gigs);
       return next(action);
     case GigsConstants.EDIT_GIG:
-      debugger;
-      const gigEdit = data => dispatch(receiveSingleGig(data));
+      const gigEdit = data => dispatch(receiveGigs(data));
       updateGig(action.gig, gigEdit, action.id);
+      return next(action);
+    case GigsConstants.REQUEST_GIGS_CATEGORY:
+      const filtered = data => dispatch(replaceGigs(data));
+      filterGigs(action.category, filtered);
+      return next(action);
+    case GigsConstants.CHECKOUT:
+      const orders = data => dispatch(receiveOrders(data));
+      checkout(action.id, orders);
       return next(action);
     default:
       return next(action);
