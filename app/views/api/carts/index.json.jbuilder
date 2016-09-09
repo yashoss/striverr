@@ -1,5 +1,6 @@
 @cart.each do |cart_item|
   json.set! cart_item.id do
+    json.id cart_item.id
     json.title cart_item.gig.title
     json.photo_url cart_item.gig.photo_url
     json.price cart_item.gig.price

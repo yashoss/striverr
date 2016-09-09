@@ -9,3 +9,5 @@ const OrdersReducer = function(state = {}, action){
       return state;
   };
 };
+
+export default OrdersReducer;

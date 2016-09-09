@@ -5,12 +5,14 @@ class ReviewForm extends React.Component{
 
   constructor(props){
     super(props);
-    this.state = {
-        body: "",
-        rating: 1,
-        author_id: this.props.currentUser.id,
-        gig_id: this.props.id
-    };
+    if(this.props.currentUser){
+      this.state = {
+          body: "",
+          rating: 1,
+          author_id: this.props.currentUser.id,
+          gig_id: this.props.id
+      };
+    }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -25,9 +27,10 @@ class ReviewForm extends React.Component{
   }
 
   render(){
-    return(
-      <div className="new-review-container">
-        <div className="new-review-form">
+    const toRender = [];
+    if(this.props.currentUser){
+       toRender.push(
+        <div>
           <h5 className="review-title">Leave a review:</h5>
 
           <form onSubmit={this.handleSubmit}>
@@ -48,7 +51,16 @@ class ReviewForm extends React.Component{
             </div>
           </form>
           </div>
-        </div>
+      )
+    }else{
+      toRender.push(
+          <h3 className="review-label">Reviews:</h3>
+      )
+    }
+    return(
+      <div className="new-review-form">
+        {toRender}
+      </div>
     )
   }
 

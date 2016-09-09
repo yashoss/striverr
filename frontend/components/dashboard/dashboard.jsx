@@ -54,6 +54,35 @@ export default class Dashboard extends React.Component{
           </li>
       );
     };
+
+    let total_sales = 0;
+    const orders_array = [];
+    if(this.props.currentUser && this.props.currentUser.id === user.id){
+      for(let key in user.sells){
+        let order = user.sells[key];
+        total_sales += 1;
+          orders_array.push(
+            <li  key={`${user.id}-order-${order.id}`}>
+              <div className="left-side-user-gig">
+                <h3 className="user-gig-title">{order.title}</h3>
+                <img className="user-gig-img" src={order.photo_url} />
+              </div>
+              <div className="right-side-user-gig">
+                <h3 className="description-header">Deliver to:</h3>
+                <p className="user-gig-description">{order.email}</p>
+              </div>
+            </li>
+      )}}else {
+        for(let key in user.sells){
+          total_sales += 1;
+        };
+        orders_array.push(
+          <li className="empty">
+            <h3 className="user-gig-title">Private</h3>
+          </li>
+        )
+      };
+
     const toRender = [
       <div className="dashboard">
         <h1 className="username">{user.username}</h1>
@@ -64,7 +93,7 @@ export default class Dashboard extends React.Component{
               <div className="stats-container">
                 <span className="user-orders">
                   <h3 className="orders-header">Orders</h3>
-                  <h4 className="orders-stats">TBD</h4>
+                  <h4 className="orders-stats">{total_sales}</h4>
                 </span>
                 <span className="users-gig-views">
                   <h3 className="gig-views-header">Gig Views</h3>
@@ -90,6 +119,12 @@ export default class Dashboard extends React.Component{
           <h2 className="users-gigs-header">Gigs</h2>
           <ul className="users-gigs-list">
             {gigs_array}
+          </ul>
+        </div>
+        <div className="users-orders">
+          <h2 className="users-orders-header">Orders</h2>
+          <ul className="users-orders-list">
+            {orders_array}
           </ul>
         </div>
       </div>

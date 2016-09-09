@@ -29,3 +29,18 @@ json.carts do
     end
   end
 end
+
+json.sells do
+  @user.sells.each do |sale|
+    json.set! sale.id do
+      json.title sale.gig.title
+      json.photo_url sale.gig.photo_url
+      json.price sale.gig.price
+      json.delivery_time sale.gig.delivery_time
+      json.category sale.gig.category
+      json.revisions sale.gig.revisions
+      json.description sale.gig.description
+      json.email sale.user.email
+    end
+  end
+end

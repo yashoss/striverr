@@ -12,7 +12,8 @@ export default class CartsIndex extends React.Component{
   }
 
 
-  removeCartItem(id){
+  removeCartItem(e, id){
+    e.preventDefault();
     this.props.removeCartItem(id);
   }
 
@@ -33,11 +34,12 @@ export default class CartsIndex extends React.Component{
         <li key={`cart-item-${key}`}>
           <h3 className="cart-title">{item.title}</h3>
           <img className="cart-img" src={item.photo_url} />
-          <p className="cart-description">Description: {item.description}</p>
+          <h4 className="cart-description-header">Description: </h4>
+          <p className="cart-description">{item.description}</p>
           <div className="cart-detial-options">
             <span className="rev">Revisions: {item.revisions}</span>
             <span className="delivery_time">Delivery Time: {item.delivery_time}</span>
-            <a href={window.location.href=window.location.href} onClick={this.removeCartItem.bind(this)} className="remove-cart">Remove</a>
+            <a href={window.location.href=window.location.href} onClick={(e) => {this.removeCartItem(e, item.id)}} className="remove-cart">Remove</a>
           </div>
         </li>
       );

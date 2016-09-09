@@ -9,7 +9,6 @@ export default class Checkout extends React.Component{
 
   render(){
     let orders = this.props.orders;
-    debugger;
     const orders_array=[];
     for(let key in orders){
       let item = orders[key];
