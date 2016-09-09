@@ -515,6 +515,8 @@ ul.nav-items {
   flex-direction: column;
   position: fixed;
   border-radius: 5px;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* line 295, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -2386,7 +2388,10 @@ li#all {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  transform: scaleX(-1);
 }
+
+
 
 /* line 1195, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1333, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -2504,6 +2509,7 @@ li#all {
   -webkit-animation: content-s 7.5s infinite;
   -moz-animation: content-s 7.5s infinite;
   animation: content-s 7.5s infinite;
+  transform: scaleX(-1);
 }
 
 /* line 1238, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
