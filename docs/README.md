@@ -1,5 +1,5 @@
 # Striver
-**add heroku link**
+[Striverr](www,striverr.com)
 
 ## Minimum Viable Product
 Striverr is a domain that allows users to post gigs (voice overs, web design, etc.) along with their qualifications. Other users can then browse these gigs in order to discover the service they need. The idea was inspired by www.fiverr.com. By the end of week 9, this app will, at minimum, satisfy the following critera with smooth, bug- free navigation, adequate seed data, and sufficient CSS styling:
