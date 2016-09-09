@@ -8,11 +8,10 @@ Striverr is a domain that allows users to post gigs (voice overs, web design, et
 * New account creation, login, and guest/demo login  
 * Production README  
 * Post gigs  
-* Search bar  
+* Filter items by category  
 * Gig dashboard  
   * orders, gig views, profile views, and listed gigs  
 * Categories  
-  * Nav bar with search by category
 * Rate and review  
 
 ## Design Docs
