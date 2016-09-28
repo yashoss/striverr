@@ -5,6 +5,11 @@ import GigsIndexContainer from '../gigs/gigs_index_container';
 const Home = () => (
   <div className="main-home">
   <div id="slider">
+    <div id="slogan">
+      <h1 className="slogan1"> LET OTHERS WORK</h1>
+      <br />
+      <h1 className="slogan2">FOR</h1><h1 className="slogan3"> YOU</h1>
+    </div>
     <div className="slides">
 
 
@@ -17,7 +22,7 @@ const Home = () => (
     </div>
     </div>
     <div className="images">
-    <img src="https://hd.unsplash.com/photo-1472148083604-64f1084980b9"/>
+    <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg"/>
     </div>
     </div>
 
@@ -31,7 +36,7 @@ const Home = () => (
     </div>
     </div>
     <div className="images">
-    <img src="https://hd.unsplash.com/photo-1468497123556-d09d1953db0d"/>
+    <img src="https://static.pexels.com/photos/7375/startup-photos.jpg"/>
     </div>
     </div>
 
@@ -45,7 +50,7 @@ const Home = () => (
     </div>
     </div>
     <div className="images">
-    <img src="https://hd.unsplash.com/photo-1466951561471-9a9a7b99cd77"/>
+    <img src="https://static.pexels.com/photos/26742/pexels-photo.jpg"/>
     </div>
     </div>
 
@@ -59,7 +64,7 @@ const Home = () => (
     </div>
     </div>
     <div className="images">
-    <img src="https://hd.unsplash.com/photo-1458226883246-b55e1a082653"/>
+    <img src="https://static.pexels.com/photos/28462/pexels-photo-28462.jpg"/>
     </div>
     </div>
 
