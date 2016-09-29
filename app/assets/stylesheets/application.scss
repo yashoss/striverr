@@ -2855,13 +2855,13 @@ h1.close:hover {
 /* line 2664, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .star-ratings-sprite {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  -webkit-transition: height 500ms;
   font-size: 0;
   line-height: 0;
   overflow: hidden;
   text-indent: -999em;
   width: 110px;
   float: right;
-  -webkit-transition: height 500ms;
   height: 0;
 }
 
@@ -2881,6 +2881,7 @@ h1.close:hover {
 /* line 2495, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 2689, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover .star-ratings-sprite {
+  -webkit-transition: height 500ms;
   height: 21px;
 }
 
@@ -2888,6 +2889,8 @@ h1.close:hover {
 /* line 2499, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 2695, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover p.username-index {
+  -webkit-transition: height 500ms;
+  -webkit-transition: opacity 500ms;
   opacity: 1;
   height: 19px;
 }
@@ -2896,13 +2899,13 @@ h1.close:hover {
 /* line 2505, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 2702, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.username-index {
+  -webkit-transition: height 500ms;
+  -webkit-transition: opacity 500ms;
   float: left;
   margin-top: 3px;
   margin-bottom: 0;
   height: 0;
   opacity: 0;
-  -webkit-transition: height 1000ms;
-  -webkit-transition: opacity 500ms;
 }
 
 /* line 2322, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
