@@ -1,6 +1,9 @@
 /* line 4, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 3, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 4, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+@import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+/* line 5, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 7, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a.header-link {
   text-decoration: none;
   display: flex;
@@ -11,6 +14,8 @@ a.header-link {
 /* line 11, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 11, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 13, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 15, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 18, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 header {
   background-color: #696969;
   width: 100%;
@@ -24,6 +29,8 @@ header {
 /* line 21, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 22, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 25, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 28, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 32, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav.login-signup {
   padding-right: 10%;
   text-decoration: none;
@@ -34,10 +41,14 @@ nav.login-signup {
   font-size: 20px;
 }
 
-nav.login-signup li{
+/* line 38, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 43, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+nav.login-signup li {
   cursor: pointer;
 }
 
+/* line 42, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 48, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li.current#guest {
   background-color: #00b22d;
   padding: 5px;
@@ -47,17 +58,23 @@ li.current#guest {
   margin-top: -4px;
 }
 
-nav.login-signup li:hover{
+/* line 51, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 58, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+nav.login-signup li:hover {
   color: #09E109;
 }
 
-li.current#guest:hover{
+/* line 55, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 63, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+li.current#guest:hover {
   background-color: darkgreen;
 }
 
 /* line 30, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 32, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 36, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 62, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 71, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 header a:link {
   text-decoration: none;
   text-transform: none;
@@ -73,6 +90,8 @@ header a:link {
 /* line 43, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 45, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 50, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 77, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 87, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 body {
   background-color: #e3e0cf;
   font-family: 'Ubuntu', sans-serif;
@@ -84,6 +103,8 @@ body {
 /* line 51, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 54, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 60, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 88, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 99, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .login-form {
   margin: 0 auto;
   padding: 5em;
@@ -95,6 +116,8 @@ body {
 /* line 59, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 63, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 70, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 99, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 111, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -103,6 +126,8 @@ a {
 /* line 64, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 69, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 77, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 107, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 120, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 label {
   padding-bottom: 5px;
 }
@@ -110,6 +135,8 @@ label {
 /* line 68, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 74, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 83, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 114, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 128, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 input.login-input {
   margin: 5%;
   background-color: lightyellow;
@@ -119,13 +146,31 @@ input.login-input {
 /* line 74, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 81, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 91, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 123, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 138, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 input[type="submit"] {
-  color: green;
+  padding: 0 10px  !important;
+  font-size: 18px !important;
+  background-color: #e3e0cf;
+  font-weight: bold;
+  text-shadow: 1px 1px #e3e0cf;
+  color: #9fa8a3;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #e3e0cf;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  margin-left: -30px;
 }
 
 /* line 78, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 86, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 97, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 130, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 146, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4 {
   margin: 0 auto;
   text-align: center;
@@ -135,6 +180,8 @@ h4 {
 /* line 84, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 93, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 105, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 139, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 156, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.header-name {
   padding-right: 10%;
   float: left;
@@ -146,6 +193,8 @@ h2.header-name {
 /* line 92, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 102, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 115, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 150, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 168, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 header a:hover {
   color: #09E109;
 }
@@ -153,6 +202,8 @@ header a:hover {
 /* line 96, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 107, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 121, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 157, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 176, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 header a {
   color: white;
 }
@@ -160,6 +211,8 @@ header a {
 /* line 100, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 112, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 127, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 164, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 184, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 button.header-button {
   display: flex;
   background: white;
@@ -175,6 +228,8 @@ button.header-button {
 /* line 112, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 125, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 141, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 179, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 200, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 hgroup.header-group {
   width: 60%;
   display: flex;
@@ -183,13 +238,15 @@ hgroup.header-group {
   height: 100%;
   background-color: transparent;
   justify-content: flex-end;
-  margin-top: -90px;
+  margin-top: -85px;
   margin-right: 150px;
 }
 
 /* line 122, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 136, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 153, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 194, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 216, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 div#gigs-index {
   width: 75%;
   margin: 0 auto;
@@ -199,6 +256,8 @@ div#gigs-index {
 /* line 128, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 143, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 161, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 203, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 226, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.header-name:hover {
   color: #09E109;
 }
@@ -206,6 +265,8 @@ h2.header-name:hover {
 /* line 132, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 148, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 167, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 210, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 234, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 #gigs-index ul {
   list-style: none;
   background-color: #c5d5cb;
@@ -224,6 +285,8 @@ h2.header-name:hover {
 /* line 147, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 164, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 184, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 228, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 253, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 #gigs-index ul li img {
   height: 130px;
   width: 222px;
@@ -233,6 +296,8 @@ h2.header-name:hover {
 /* line 153, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 171, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 192, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 237, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 263, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 #gigs-index ul li {
   width: 232px;
   height: 260px;
@@ -252,6 +317,8 @@ h2.header-name:hover {
 /* line 169, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 188, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 210, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 256, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 283, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.nav-items {
   list-style: none;
   padding-left: 5px;
@@ -260,6 +327,8 @@ ul.nav-items {
 /* line 174, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 194, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 217, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 264, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 292, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .nav-bar {
   background-color: #c5d5cb;
   width: 150px;
@@ -277,6 +346,8 @@ ul.nav-items {
 /* line 188, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 209, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 233, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 281, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 310, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#gaming {
   padding: 10px 5px;
   margin: 10px 15px;
@@ -287,6 +358,8 @@ li#gaming {
 /* line 195, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 217, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 242, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 291, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 321, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#design {
   padding: 10px 5px;
   margin: 10px 15px;
@@ -297,6 +370,8 @@ li#design {
 /* line 202, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 225, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 251, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 301, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 332, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#web-dev {
   padding: 10px 5px;
   margin: 10px 15px;
@@ -307,6 +382,8 @@ li#web-dev {
 /* line 209, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 233, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 260, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 311, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 343, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#art {
   padding: 10px 5px;
   margin: 10px 15px;
@@ -317,6 +394,8 @@ li#art {
 /* line 216, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 241, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 269, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 321, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 354, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#writing {
   padding: 10px 5px;
   margin: 10px 15px;
@@ -327,6 +406,8 @@ li#writing {
 /* line 223, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 249, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 278, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 331, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 365, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 div.main-home img {
   width: 100%;
   height: 400px;
@@ -338,6 +419,8 @@ div.main-home img {
 /* line 231, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 258, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 288, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 342, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 377, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4.category-header {
   padding-top: 10px;
 }
@@ -345,6 +428,8 @@ h4.category-header {
 /* line 235, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 263, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 294, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 349, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 385, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.gig-title {
   margin-left: 100px;
   border-bottom: 1px solid lightgray;
@@ -354,6 +439,8 @@ h1.gig-title {
 /* line 241, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 270, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 302, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 358, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 395, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .gig-pic {
   margin-left: 100px;
   display: flex;
@@ -368,6 +455,8 @@ h1.gig-title {
 /* line 252, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 282, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 315, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 372, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 410, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 div.gig-pic img {
   width: 500px;
   height: 350px;
@@ -376,6 +465,8 @@ div.gig-pic img {
 /* line 257, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 288, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 322, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 380, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 419, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .gig-show-container {
   width: 1000px;
   margin-left: -40px;
@@ -384,6 +475,8 @@ div.gig-pic img {
 /* line 262, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 294, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 329, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 388, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 428, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul {
   list-style: none;
 }
@@ -391,6 +484,8 @@ ul {
 /* line 266, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 299, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 335, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 395, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 436, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .gig-price-info {
   float: right;
   width: 300px;
@@ -406,6 +501,8 @@ ul {
 /* line 278, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 312, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 349, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 410, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 452, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .gig-user-info {
   float: right;
   display: flex;
@@ -422,6 +519,8 @@ ul {
 /* line 291, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 326, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 364, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 426, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 469, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .purchase-button {
   border: 0;
   background: #5786c1;
@@ -439,6 +538,8 @@ ul {
 /* line 305, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 341, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 380, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 443, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 487, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a.logout {
   margin-top: 22px;
 }
@@ -446,6 +547,8 @@ a.logout {
 /* line 309, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 346, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 386, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 450, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 495, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.header-name {
   line-height: 50px;
   margin-top: 20px;
@@ -454,6 +557,8 @@ h2.header-name {
 /* line 314, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 352, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 393, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 458, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 504, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .new-gig-container {
   width: 1000px;
   margin: 0 auto;
@@ -469,6 +574,8 @@ h2.header-name {
 /* line 326, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 365, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 407, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 473, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 520, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .new-gig-form {
   display: flex;
   flex-direction: column;
@@ -477,6 +584,8 @@ h2.header-name {
 /* line 331, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 371, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 414, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 481, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 529, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 input.gig-field {
   display: block;
   margin: 0 20px 20px 20px;
@@ -488,6 +597,8 @@ input.gig-field {
 /* line 339, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 380, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 424, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 492, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 541, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 textarea.gig-field {
   display: block;
   margin: 0 20px 20px 20px;
@@ -499,6 +610,8 @@ textarea.gig-field {
 /* line 347, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 389, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 434, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 503, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 553, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .new-gig-form select {
   display: block;
   margin: 0 20px 20px 20px;
@@ -510,6 +623,8 @@ textarea.gig-field {
 /* line 355, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 398, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 444, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 514, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 565, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 input.new-gig-button {
   margin-left: 200px;
   padding: 10px;
@@ -520,6 +635,8 @@ input.new-gig-button {
 /* line 362, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 406, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 453, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 524, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 576, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.cart-img {
   width: 170px;
   float: left;
@@ -530,6 +647,8 @@ img.cart-img {
 /* line 369, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 414, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 462, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 534, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 587, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.cart-item-list {
   display: flex;
   flex-direction: column;
@@ -540,6 +659,8 @@ ul.cart-item-list {
 /* line 376, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 422, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 471, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 544, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 598, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.cart-item-list li {
   margin: 0;
   border: 2px solid #ccc;
@@ -551,6 +672,8 @@ ul.cart-item-list li {
 /* line 384, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 431, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 481, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 555, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 610, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.cart-description {
   float: left;
   width: 300px;
@@ -562,6 +685,8 @@ p.cart-description {
 /* line 392, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 440, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 491, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 566, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 622, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .rev {
   float: right;
   padding: 10px;
@@ -571,6 +696,8 @@ p.cart-description {
 /* line 398, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 447, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 499, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 575, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 632, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .delivery_time {
   float: right;
   padding: 10px;
@@ -580,6 +707,8 @@ p.cart-description {
 /* line 404, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 454, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 507, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 584, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 642, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a.remove-cart {
   float: right;
   padding: 10px;
@@ -590,6 +719,8 @@ a.remove-cart {
 /* line 411, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 462, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 516, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 594, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 653, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .cart-detial-options {
   display: flex;
   float: right;
@@ -600,6 +731,8 @@ a.remove-cart {
 /* line 418, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 470, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 525, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 604, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 664, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h3.cart-title {
   margin: 0;
   padding-bottom: 10px;
@@ -608,6 +741,8 @@ h3.cart-title {
 /* line 423, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 476, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 532, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 612, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 673, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .checkout-container {
   display: flex;
   flex-direction: column;
@@ -624,6 +759,8 @@ h3.cart-title {
 /* line 436, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 490, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 547, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 628, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 690, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 section.gradient button {
   display: inline-block;
   margin: 10px 10px 0 0;
@@ -639,6 +776,8 @@ section.gradient button {
 /* line 448, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 503, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 561, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 643, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 706, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 button:focus {
   outline: none;
 }
@@ -646,6 +785,8 @@ button:focus {
 /* line 452, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 508, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 567, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 650, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 714, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 section.gradient button {
   color: #fff;
   text-shadow: -2px 2px #346392;
@@ -658,6 +799,8 @@ section.gradient button {
 /* line 461, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 518, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 578, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 662, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 727, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 section.gradient button:hover {
   background-image: -webkit-linear-gradient(bottom, #6496c8, #346392);
 }
@@ -665,6 +808,8 @@ section.gradient button:hover {
 /* line 465, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 523, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 584, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 669, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 735, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 section.gradient button:active {
   box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
 }
@@ -672,6 +817,8 @@ section.gradient button:active {
 /* line 469, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 528, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 590, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 676, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 743, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .right-side-checkout {
   display: flex;
   flex-direction: column;
@@ -683,6 +830,8 @@ section.gradient button:active {
 /* line 477, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 537, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 600, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 687, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 755, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a.keep-shopping {
   color: white;
   background-color: #346392;
@@ -694,6 +843,8 @@ a.keep-shopping {
 /* line 485, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 546, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 610, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 698, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 767, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a.keep-shopping:hover {
   background-image: -webkit-linear-gradient(bottom, #6496c8, #346392);
 }
@@ -701,6 +852,8 @@ a.keep-shopping:hover {
 /* line 489, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 551, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 616, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 705, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 775, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.username {
   font-size: 48px;
   border-bottom: 1px solid #ccc;
@@ -710,6 +863,8 @@ h1.username {
 /* line 495, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 558, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 624, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 714, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 785, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.profile-pic {
   width: 200px;
   height: 200px;
@@ -721,6 +876,8 @@ img.profile-pic {
 /* line 503, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 567, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 634, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 725, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 797, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .stats {
   display: flex;
   flex-direction: row;
@@ -731,6 +888,8 @@ img.profile-pic {
 /* line 510, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 575, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 643, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 735, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 808, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.stats-header {
   display: flex;
   width: 100%;
@@ -741,6 +900,8 @@ h2.stats-header {
 /* line 517, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 583, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 652, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 745, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 819, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .stats-container {
   display: flex;
   border: 1px solid black;
@@ -754,6 +915,8 @@ h2.stats-header {
 /* line 527, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 594, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 664, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 758, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 833, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4.orders-stats {
   padding: 0;
 }
@@ -761,6 +924,8 @@ h4.orders-stats {
 /* line 531, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 599, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 670, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 765, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 841, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4.gig-views {
   padding: 0;
 }
@@ -768,6 +933,8 @@ h4.gig-views {
 /* line 535, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 604, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 676, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 772, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 849, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4.profile-views {
   padding: 0;
 }
@@ -775,6 +942,8 @@ h4.profile-views {
 /* line 539, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 609, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 682, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 779, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 857, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.users-gigs-header {
   margin-left: 5%;
   margin-top: 50px;
@@ -784,6 +953,8 @@ h2.users-gigs-header {
 /* line 545, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 616, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 690, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 788, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 867, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .users-gigs {
   display: flex;
   flex-direction: column;
@@ -793,6 +964,8 @@ h2.users-gigs-header {
 /* line 551, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 623, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 698, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 797, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 877, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.users-gigs-list {
   display: flex;
   border: 1px solid black;
@@ -805,6 +978,8 @@ ul.users-gigs-list {
 /* line 560, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 633, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 709, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 809, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 890, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.user-gig-img {
   width: 150px;
   height: 100px;
@@ -813,6 +988,8 @@ img.user-gig-img {
 /* line 565, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 639, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 716, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 817, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 899, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .left-side-user-gig {
   float: left;
   width: 15%;
@@ -821,6 +998,8 @@ img.user-gig-img {
 /* line 570, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 645, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 723, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 825, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 908, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .right-side-user-gig {
   margin-left: 100px;
   width: 50%;
@@ -833,6 +1012,8 @@ img.user-gig-img {
 /* line 579, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 655, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 734, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 837, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 921, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.users-gigs-list li {
   height: 180px;
   border-bottom: 1px solid #ccc;
@@ -843,6 +1024,8 @@ ul.users-gigs-list li {
 /* line 586, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 663, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 743, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 847, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 932, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-gig-links {
   display: flex;
   flex-direction: column;
@@ -855,6 +1038,8 @@ ul.users-gigs-list li {
 /* line 595, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 673, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 754, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 859, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 945, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-gig-links a {
   padding: 10px;
   color: blue;
@@ -864,6 +1049,8 @@ ul.users-gigs-list li {
 /* line 601, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 680, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 762, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 868, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 955, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-gig-links a:hover {
   text-decoration: underline;
 }
@@ -871,6 +1058,8 @@ ul.users-gigs-list li {
 /* line 605, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 685, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 768, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 875, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 963, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .profile-info {
   float: right;
   width: 75%;
@@ -879,6 +1068,8 @@ ul.users-gigs-list li {
 /* line 610, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 691, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 775, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 883, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 972, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-dashboard {
   display: block;
 }
@@ -886,6 +1077,8 @@ ul.users-gigs-list li {
 /* line 614, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 696, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 781, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 890, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 980, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .dashboard {
   display: block;
 }
@@ -893,6 +1086,8 @@ ul.users-gigs-list li {
 /* line 618, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 701, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 787, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 897, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 988, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-description {
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -906,6 +1101,8 @@ ul.users-gigs-list li {
 /* line 628, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 712, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 799, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 910, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1002, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.user-description-header {
   margin: 0;
   padding-left: 10px;
@@ -915,6 +1112,8 @@ h2.user-description-header {
 /* line 634, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 719, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 807, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 919, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1012, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .user-description p {
   margin: 0 auto;
   margin-left: 20px;
@@ -924,6 +1123,8 @@ h2.user-description-header {
 /* line 640, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 726, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 815, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 928, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1022, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.gig-user-pic {
   height: 100px;
   width: 100px;
@@ -933,6 +1134,8 @@ img.gig-user-pic {
 /* line 646, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 733, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 823, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 937, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1032, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 span.gig-username {
   float: left;
   width: 100%;
@@ -941,6 +1144,8 @@ span.gig-username {
 /* line 651, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 739, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 830, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 945, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1041, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h5.about-header {
   margin-bottom: 0;
 }
@@ -948,6 +1153,8 @@ h5.about-header {
 /* line 655, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 744, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 836, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 952, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1049, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.gig-user-pic:hover {
   border: 1px solid blue;
 }
@@ -955,6 +1162,8 @@ img.gig-user-pic:hover {
 /* line 659, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 749, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 842, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 959, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1057, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 span.gig-username:hover {
   text-decoration: underline;
 }
@@ -962,6 +1171,8 @@ span.gig-username:hover {
 /* line 663, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 754, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 848, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 966, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1065, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.gig-user-description {
   overflow-y: auto;
 }
@@ -969,6 +1180,8 @@ p.gig-user-description {
 /* line 667, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 759, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 854, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 973, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1073, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li.gig-show-description {
   overflow-y: scroll;
 }
@@ -976,6 +1189,8 @@ li.gig-show-description {
 /* line 671, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 764, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 860, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 980, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1081, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li.gig-show-description h3 {
   margin-bottom: 0;
 }
@@ -983,6 +1198,8 @@ li.gig-show-description h3 {
 /* line 675, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 769, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 866, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 987, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1089, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 hgroup.header-group a {
   background-color: #c0dfd9;
   padding: 0 20px;
@@ -999,6 +1216,8 @@ hgroup.header-group a {
 /* line 688, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 783, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 881, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1003, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1106, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 hgroup.header-group h2 {
   padding: 0;
   margin-right: 20px;
@@ -1007,6 +1226,8 @@ hgroup.header-group h2 {
 /* line 693, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 789, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 888, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1011, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1115, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .new-review-form {
   margin-left: 100px;
   width: 500px;
@@ -1016,6 +1237,8 @@ hgroup.header-group h2 {
 /* line 699, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 796, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 896, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1020, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1125, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 label.review-rating {
   margin-left: 5px;
 }
@@ -1023,6 +1246,8 @@ label.review-rating {
 /* line 703, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 801, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 902, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1027, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1133, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 textarea.review-body {
   width: 300px;
 }
@@ -1030,6 +1255,8 @@ textarea.review-body {
 /* line 707, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 806, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 908, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1034, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1141, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h5.review-title {
   margin-top: 0;
   margin-right: 10px;
@@ -1038,14 +1265,20 @@ h5.review-title {
 /* line 712, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 812, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 915, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1042, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1150, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .button-holder {
   width: 50px;
-  margin-top: 5px;
+  margin: 0;
+  float: right;
+  margin-top: -25px;
 }
 
 /* line 717, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 818, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 922, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1050, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1161, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 img.reviewer-pic {
   width: 50px;
   height: 50px;
@@ -1054,6 +1287,8 @@ img.reviewer-pic {
 /* line 722, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 824, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 929, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1058, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1170, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.reviews-list {
   width: 100%;
 }
@@ -1061,6 +1296,8 @@ ul.reviews-list {
 /* line 726, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 829, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 935, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1065, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1178, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .reviewer {
   display: flex;
   float: left;
@@ -1069,6 +1306,8 @@ ul.reviews-list {
 /* line 731, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 835, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 942, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1073, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1187, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .review-gut {
   float: left;
   margin-top: 20px;
@@ -1077,6 +1316,8 @@ ul.reviews-list {
 /* line 736, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 841, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 949, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1081, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1196, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .reviews-container {
   width: 600px;
   display: flex;
@@ -1089,6 +1330,8 @@ ul.reviews-list {
 /* line 745, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 851, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 960, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1093, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1209, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.reviewer-username {
   margin: 0;
 }
@@ -1096,6 +1339,8 @@ p.reviewer-username {
 /* line 749, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 856, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 966, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1100, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1217, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.review-body {
   margin: 1px;
 }
@@ -1103,6 +1348,8 @@ p.review-body {
 /* line 753, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 861, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 972, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1107, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1225, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li.review-item {
   width: 500px;
   display: flex;
@@ -1112,6 +1359,8 @@ li.review-item {
 /* line 760, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 868, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 980, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1116, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1235, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 li#all {
   padding: 10px 5px;
   margin: 2px 15px;
@@ -1122,6 +1371,8 @@ li#all {
 /* line 767, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 876, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 989, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1126, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1246, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .nav-bar li {
   cursor: pointer;
   background-color: #9fa8a3;
@@ -1130,6 +1381,8 @@ li#all {
 /* line 772, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 882, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 996, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1134, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1255, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 #slider {
   width: 100%;
   height: 500px;
@@ -1145,17 +1398,21 @@ li#all {
     left: 0;
   }
 }
-
-.wrapper-background{
+/* line 1150, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1271, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.wrapper-background {
   width: 100%;
   height: 600px;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
 }
+
 /* line 787, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 898, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1013, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1160, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1283, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .slides {
   width: 400%;
   height: 100%;
@@ -1169,6 +1426,8 @@ li#all {
 /* line 797, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 909, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1025, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1173, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1297, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .slider {
   width: 25%;
   height: 100%;
@@ -1182,6 +1441,8 @@ li#all {
 /* line 809, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 920, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1037, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1186, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1311, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .slide img {
   width: 100%;
   height: 100%;
@@ -1190,6 +1451,8 @@ li#all {
 /* line 814, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 926, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1044, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1194, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1320, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .slide img {
   width: 100%;
   height: 100%;
@@ -1198,6 +1461,8 @@ li#all {
 /* line 819, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 932, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1051, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1202, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1329, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .image {
   width: 100%;
   height: 100%;
@@ -1206,6 +1471,8 @@ li#all {
 /* line 824, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 938, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1058, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1210, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1338, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .image img {
   width: 100%;
   height: 100%;
@@ -1214,6 +1481,8 @@ li#all {
 /* line 829, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 944, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1065, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1218, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1347, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .legend {
   border: 500px solid transparent;
   border-left: 800px solid rgba(52, 73, 94, 0.7);
@@ -1225,6 +1494,8 @@ li#all {
 /* line 837, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 953, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1075, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1229, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1359, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .content {
   width: 100%;
   height: 100%;
@@ -1235,6 +1506,8 @@ li#all {
 /* line 844, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 961, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1084, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1239, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1370, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .content-txt {
   width: 400px;
   height: 150px;
@@ -1250,6 +1523,8 @@ li#all {
 /* line 856, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 974, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1098, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1254, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1386, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .content-txt h1 {
   font-family: Arial;
   text-transform: uppercase;
@@ -1263,6 +1538,8 @@ li#all {
 /* line 866, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 985, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1110, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1267, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1400, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .content-txt h2 {
   font-family: arial;
   font-weight: normal;
@@ -1276,6 +1553,8 @@ li#all {
 /* line 876, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 996, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1122, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1280, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1414, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .switch {
   width: 120px;
   height: 10px;
@@ -1288,6 +1567,8 @@ li#all {
 /* line 885, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1006, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1133, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1292, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1427, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .switch > ul {
   list-style: none;
 }
@@ -1295,6 +1576,8 @@ li#all {
 /* line 889, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1011, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1139, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1299, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1435, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .switch > ul > li {
   width: 10px;
   height: 10px;
@@ -1308,6 +1591,8 @@ li#all {
 /* line 899, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1022, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1151, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1312, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1449, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .switch ul {
   overflow: hidden;
 }
@@ -1315,6 +1600,8 @@ li#all {
 /* line 903, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1027, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1157, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1319, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1457, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .on {
   width: 100%;
   height: 100%;
@@ -1584,6 +1871,8 @@ li#all {
 /* line 1169, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1294, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1425, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1588, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1727, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 a {
   text-decoration: none;
   color: inherit;
@@ -1592,6 +1881,8 @@ a {
 /* line 1174, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1300, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1432, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1596, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1736, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 html {
   width: 100%;
   height: 100%;
@@ -1600,6 +1891,8 @@ html {
 /* line 1179, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1306, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1439, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1604, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1745, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 body {
   background: #e3e0cf;
 }
@@ -1607,6 +1900,8 @@ body {
 /* line 1183, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1311, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1445, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1611, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1753, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 header {
   width: 100%;
   height: 80px;
@@ -1617,6 +1912,8 @@ header {
 /* line 1190, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1319, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1454, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1621, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1764, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .logo {
   width: 50px;
   height: 65px;
@@ -1629,6 +1926,8 @@ header {
 /* line 1199, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1329, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1465, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1633, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1777, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .logo img {
   width: 100%;
   height: 100%;
@@ -1637,6 +1936,8 @@ header {
 /* line 1204, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1335, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1472, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1641, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1786, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav {
   width: auto;
   height: 100%;
@@ -1648,6 +1949,8 @@ nav {
 /* line 1212, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1344, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1482, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1652, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1798, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav li {
   width: auto;
   margin-right: 20px;
@@ -1657,6 +1960,8 @@ nav li {
 /* line 1218, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1351, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1490, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1661, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1808, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav li a {
   font-family: Arial;
   font-size: 16px;
@@ -1667,6 +1972,8 @@ nav li a {
 /* line 1225, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1359, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1499, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1671, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1819, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav select {
   width: 150px;
   height: 30px;
@@ -1681,6 +1988,8 @@ nav select {
 /* line 1236, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1371, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1512, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1685, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1834, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav select:focus {
   outline: none;
 }
@@ -1688,6 +1997,8 @@ nav select:focus {
 /* line 1240, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1376, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1518, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1692, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1842, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .container {
   width: 70%;
   height: auto;
@@ -1698,6 +2009,8 @@ nav select:focus {
 /* line 1247, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1384, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1527, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1702, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1853, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .container h1 {
   font-family: Arial;
   font-size: 24px;
@@ -1709,6 +2022,8 @@ nav select:focus {
 /* line 1255, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1393, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1537, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1713, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1865, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .container h2 {
   font-family: arial;
   font-size: 16px;
@@ -1719,6 +2034,8 @@ nav select:focus {
 /* line 1262, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1401, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1546, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1723, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1876, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .container h3 {
   font-family: arial;
   font-weight: normal;
@@ -1729,6 +2046,8 @@ nav select:focus {
 /* line 1269, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1409, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1555, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1733, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1887, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .code {
   width: 600px;
   height: auto;
@@ -1744,6 +2063,8 @@ nav select:focus {
 /* line 1281, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1422, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1569, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1748, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1903, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .code span {
   color: #89A978;
 }
@@ -1751,6 +2072,8 @@ nav select:focus {
 /* line 1285, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1427, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1575, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1755, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1911, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .space {
   width: 20px;
   height: 1px;
@@ -1760,6 +2083,8 @@ nav select:focus {
 /* line 1291, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1434, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1583, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1764, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1921, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 footer {
   width: 100%;
   height: 50px;
@@ -1769,6 +2094,8 @@ footer {
 /* line 1297, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1441, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1591, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1773, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1931, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 footer h1 {
   font-family: Arial;
   font-weight: normal;
@@ -1781,6 +2108,8 @@ footer h1 {
 /* line 1306, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1451, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1602, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1785, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1944, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .nav-bar li:hover {
   color: #e3e0cf;
 }
@@ -1788,6 +2117,8 @@ footer h1 {
 /* line 1310, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1456, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1608, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1792, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1952, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 hgroup.header-group a:hover {
   color: #09E109;
 }
@@ -1795,6 +2126,8 @@ hgroup.header-group a:hover {
 /* line 1314, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1461, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1614, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1799, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1960, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder {
   margin: 0 auto;
   height: 100%;
@@ -1809,6 +2142,8 @@ hgroup.header-group a:hover {
 /* line 1325, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1473, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1627, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1813, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1975, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image {
   position: relative;
   overflow: hidden;
@@ -1817,6 +2152,8 @@ hgroup.header-group a:hover {
 /* line 1330, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1479, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1634, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1821, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1984, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover .details {
   top: 0;
   left: 0;
@@ -1826,6 +2163,8 @@ hgroup.header-group a:hover {
 /* line 1336, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1486, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1642, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1830, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1994, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover .details h1 {
   left: 0;
   transition-delay: 200ms;
@@ -1834,6 +2173,8 @@ hgroup.header-group a:hover {
 /* line 1341, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1492, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1649, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1838, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2003, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover .details a {
   right: 0;
   transition-delay: 400ms;
@@ -1842,6 +2183,8 @@ hgroup.header-group a:hover {
 /* line 1346, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1498, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1656, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1846, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2012, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover .details p {
   opacity: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -1854,6 +2197,8 @@ hgroup.header-group a:hover {
 /* line 1355, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1508, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1667, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1858, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2025, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image .details {
   width: 350px;
   height: 250px;
@@ -1874,6 +2219,8 @@ hgroup.header-group a:hover {
 /* line 1372, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1526, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1686, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1878, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2046, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image .details h1 {
   background: rgba(13, 114, 199, 0.7);
   position: absolute;
@@ -1886,6 +2233,8 @@ hgroup.header-group a:hover {
 /* line 1381, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1536, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1697, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1890, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2059, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image .details p {
   width: 80%;
   position: absolute;
@@ -1900,6 +2249,8 @@ hgroup.header-group a:hover {
 /* line 1392, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1548, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1710, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1904, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2074, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image .details a {
   position: absolute;
   right: 1000%;
@@ -1911,6 +2262,8 @@ hgroup.header-group a:hover {
 /* line 1400, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1557, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1720, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1915, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2086, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .main-home {
   background-color: #e3e0cf;
 }
@@ -1918,6 +2271,8 @@ hgroup.header-group a:hover {
 /* line 1404, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1562, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1726, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1922, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2094, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h2.users-orders-header {
   margin-left: 5%;
   margin-top: 50px;
@@ -1927,6 +2282,8 @@ h2.users-orders-header {
 /* line 1410, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1569, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1734, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1931, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2104, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .users-orders-list li {
   height: 180px;
   border-bottom: 1px solid #ccc;
@@ -1937,6 +2294,8 @@ h2.users-orders-header {
 /* line 1417, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1577, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1743, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1941, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2115, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .users-orders {
   display: flex;
   flex-direction: column;
@@ -1946,6 +2305,8 @@ h2.users-orders-header {
 /* line 1423, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1584, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1751, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1950, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2125, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 ul.users-orders-list {
   display: flex;
   border: 1px solid black;
@@ -1958,6 +2319,8 @@ ul.users-orders-list {
 /* line 1432, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1594, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1762, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1962, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2138, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h4.cart-description-header {
   float: left;
   margin-left: 30px;
@@ -1969,6 +2332,8 @@ h4.cart-description-header {
 /* line 1440, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1603, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1772, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1973, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2150, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 div#slogan {
   position: absolute;
   z-index: 99;
@@ -1984,6 +2349,8 @@ div#slogan {
 /* line 1449, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1615, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1785, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1988, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2166, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.slogan1 {
   margin-bottom: 0;
 }
@@ -1991,6 +2358,8 @@ h1.slogan1 {
 /* line 1453, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1620, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1791, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 1995, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2174, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.slogan2 {
   margin: 0;
   float: left;
@@ -2001,6 +2370,8 @@ h1.slogan2 {
 /* line 1458, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1628, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1800, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2005, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2185, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.slogan3 {
   margin: 0;
   margin-top: -15px;
@@ -2010,6 +2381,8 @@ h1.slogan3 {
 /* line 1463, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1634, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1807, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2014, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2195, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 h1.slogan3 {
   -webkit-animation: color-change 2s infinite;
   -moz-animation: color-change 2s infinite;
@@ -2088,37 +2461,113 @@ h1.slogan3 {
     color: navy;
   }
 }
-
+/* line 2093, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2274, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav.login-signup {
-    width: 60%;
-    display: flex;
-    float: right;
-    flex-direction: row;
-    height: 100%;
-    background-color: transparent;
-    justify-content: flex-end;
+  width: 60%;
+  display: flex;
+  float: right;
+  flex-direction: row;
+  height: 100%;
+  background-color: transparent;
+  justify-content: flex-end;
 }
 
+/* line 2103, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2285, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav.login-signup a {
-    background-color: #c0dfd9;
-    padding: 0 20px;
-    border-radius: 10px;
-    color: #3b3a36;
-    font-size: 20px;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: -50px;
-    margin-right: 20px;
+  background-color: #c0dfd9;
+  padding: 0 20px;
+  border-radius: 10px;
+  color: #3b3a36;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: -50px;
+  margin-right: 20px;
 }
 
+/* line 2116, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2299, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav.login-signup a:hover {
-    color: green;
+  color: green;
 }
 
+/* line 2120, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2304, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 nav.login-signup a:hover {
-    color: #09E109;
+  color: #09E109;
 }
 
-.nav-bar li:hover {
+/* line 2126, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2309, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+fieldset, label {
+  padding: 0;
+}
+
+/* line 2127, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2315, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+
+
+/****** Style Star Rating Widget *****/
+/* line 2132, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2327, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating {
+  border: none;
+  width: 210px;
+  margin-top: -20px;
+}
+
+/* line 2137, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2334, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > input {
+  display: none;
+}
+
+/* line 2138, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2339, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+/* line 2146, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2348, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+/* line 2151, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2354, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+/* line 2158, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2361, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+/* line 2162, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+/* line 2369, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+
+input.review-button:hover {
+    background-color: #fff;
 }

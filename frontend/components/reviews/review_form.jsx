@@ -31,20 +31,20 @@ class ReviewForm extends React.Component{
     if(this.props.currentUser){
        toRender.push(
         <div>
-          <h5 className="review-title">Leave a review:</h5>
 
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} onChange={this.update("rating")} value={this.state.rating}>
             <textarea value={this.state.body} placeholder="Leave feedback..."
               onChange={this.update("body")} className="review-body"/>
 
+            <br />
             <label className="review-rating">Rating: </label>
-            <select onChange={this.update("rating")} value={this.state.rating}>
-              <option value={1}>1</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-              <option value={5} >5</option>
-            </select>
+            <fieldset className="rating">
+                <input type="radio" id="star5" name="rating" value={5} /><label className = "full" htmlFor="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4" name="rating" value={4} /><label className = "full" htmlFor="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3" name="rating" value={3} /><label className = "full" htmlFor="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2" name="rating" value={2} /><label className = "full" htmlFor="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1" name="rating" value={1} /><label className = "full" htmlFor="star1" title="Sucks big time - 1 star"></label>
+            </fieldset>
 
             <div className="button-holder">
               <input type="submit" value="submit" className="review-button"/>
