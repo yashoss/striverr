@@ -7,8 +7,10 @@ class Api::GigsController < ApplicationController
   def index
     if(params[:category] == nil || params[:category] == "all")
       @gigs = Gig.includes(:user, :reviews).all
-    else
+    elsif (params[:category] == "gaming" || params[:category] == "design" || params[:category] == "web-dev" || params[:category] == "art" || params[:category] == "writing")
       @gigs = Gig.where(category: params[:category]).includes(:user, :reviews)
+    else
+      @gigs = Gig.where('lower(title) Like ?', "%#{params[:category].downcase}%").includes(:user, :reviews)
     end
     render :index
   end

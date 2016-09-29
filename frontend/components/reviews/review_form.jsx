@@ -32,13 +32,13 @@ class ReviewForm extends React.Component{
        toRender.push(
         <div>
 
-          <form onSubmit={this.handleSubmit} onChange={this.update("rating")} value={this.state.rating}>
+          <form onSubmit={this.handleSubmit}>
             <textarea value={this.state.body} placeholder="Leave feedback..."
               onChange={this.update("body")} className="review-body"/>
 
             <br />
             <label className="review-rating">Rating: </label>
-            <fieldset className="rating">
+            <fieldset className="rating" onChange={this.update("rating")} value={this.state.rating}>
                 <input type="radio" id="star5" name="rating" value={5} /><label className = "full" htmlFor="star5" title="Awesome - 5 stars"></label>
                 <input type="radio" id="star4" name="rating" value={4} /><label className = "full" htmlFor="star4" title="Pretty good - 4 stars"></label>
                 <input type="radio" id="star3" name="rating" value={3} /><label className = "full" htmlFor="star3" title="Meh - 3 stars"></label>
