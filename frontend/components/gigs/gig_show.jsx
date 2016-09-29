@@ -18,7 +18,7 @@ class GigShow extends React.Component{
     this.props.requestSingleGig(this.props.id)
   }
 
-  
+
 
   addToCart(e){
     e.preventDefault();

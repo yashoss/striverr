@@ -28,8 +28,9 @@ export default class GigsIndex extends React.Component{
           width           : '1000px',
           height          : '85%',
           border          : '1px solid #ccc',
-          padding         : '20px',
-          backgroundColor : 'rgba(156, 174, 190, 0.79)'
+          padding         : '10px',
+          backgroundColor : 'rgba(156, 174, 190, 0.79)',
+          overflowY       : 'hidden'
 
         }
       }
@@ -40,10 +41,12 @@ export default class GigsIndex extends React.Component{
 
   openModal(key){
     this.setState({modal: true, key: key});
+    $("html, body").css('overflowY', 'hidden');
   }
 
   closeModal(){
     this.setState({modal: false});
+    $("html, body").css('overflowY', 'initial')
   }
 
   componentDidMount(){
@@ -82,6 +85,9 @@ export default class GigsIndex extends React.Component{
           {gigs_list}
         </ul>
         <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
+          <div className="close-button">
+            <h1 className="close" onClick={this.closeModal.bind(this)}>X</h1>
+          </div>
           <GigShowContainer id={this.state.key}/>
         </Modal>
       </div>
