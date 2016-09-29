@@ -23,7 +23,7 @@ class SessionForm extends React.Component {
 	}
 
 	componentDidMount(){
-		if(this.props.location.pathname === "/guest"){
+		if(this.props.formType === "/guest"){
 			setTimeout(() => {this.props.processForm({user: {username: "Guest", password: "password"}})}, 1000)
 		}
 	}
@@ -34,8 +34,8 @@ class SessionForm extends React.Component {
 
 	handleSubmit(e){
 		e.preventDefault();
-		if(this.props.location.pathname === "/guest"){
-			this.props.processForm({user: {username: "Guest", password: "password"}})
+		if(this.props.formType === "/guest"){
+			this.props.processForm({user: {username: "Guest", password: "password"}});
 		}else{
 			const user = this.state;
 			this.props.processForm({user});
@@ -55,7 +55,7 @@ class SessionForm extends React.Component {
 	}
 
 	render() {
-		const currentRouteName = this.props.location.pathname;
+		const currentRouteName = this.props.formType;
 		if (currentRouteName === "/signup"){
 			return (
 				<div className="login-form-container">

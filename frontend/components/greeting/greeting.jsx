@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
+import Modal from 'react-modal';
+import SessionFormContainer from '../session_form/session_form_container';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link to="/login" activeClassName="current">Login</Link>
-    <Link to="/signup" activeClassName="current">Sign up!</Link>
-    <Link to="/guest" activeClassName="current">Guest Login!</Link>
+    <ul>
+      <li onClick={Greeting.openModal.bind(this, "/login")} className="current">Login</li>
+      <li onClick={Greeting.openModal.bind(this, "/signup")} className="current">Sign up!</li>
+      <li onClick={Greeting.openModal.bind(this, "/guest")} className="current">Guest Login!</li>
+    </ul>
   </nav>
 );
 
@@ -22,12 +26,92 @@ const goToUser = (id) => {
   hashHistory.push(`/users/${id}`);
 };
 
-function Greeting({currentUser, logout}){
-  if (currentUser){
-    return personalGreeting(currentUser, logout, goToUser);
-  } else {
-    return sessionLinks();
+export default class Greeting extends React.Component{
+
+  constructor(props, {currentUser}){
+    super(props);
+
+    this.show = [];
+
+    this.state={
+      key: -1,
+      modal: false,
+      style:{
+        overlay : {
+          position        : 'fixed',
+          top             : 0,
+          left            : 0,
+          right           : 0,
+          bottom          : 0,
+          backgroundColor : 'rgba(255, 255, 255, 0.0)',
+          zIndex          : 999,
+          transition      : "all 1s ease"
+        },
+        content : {
+          margin          : 'auto',
+          width           : '600px',
+          height          : '450px',
+          border          : '1px solid #ccc',
+          padding         : '20px',
+          backgroundColor : 'rgba(156, 174, 190, 0.79)'
+
+        }
+      }
+    };
+
   }
+
+  openModal(key){
+    this.setState({formType: key})
+    this.setState({modal: true});
+  }
+
+  closeModal(){
+    this.setState({modal: false});
+  }
+
+  goToUser(id){
+    hashHistory.push(`/users/${id}`);
+  };
+
+  componentWillReceiveProps(){
+    this.closeModal();
+  }
+
+  render(){
+    if (this.props.currentUser){
+      this.show.push(
+        <hgroup className="header-group">
+        <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
+        <Link to={`/carts/${this.props.currentUser.id}`} activeClassName="current">Cart</Link>
+        <div onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
+        <a href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
+        </hgroup>
+      )
+
+    } else {
+      this.show.push(
+        <nav className="login-signup">
+          <ul>
+            <li key="login" onClick={this.openModal.bind(this, "/login")} className="current">Login</li>
+            <li key="signup" onClick={this.openModal.bind(this, "/signup")} className="current">Sign up!</li>
+            <li key="guest" onClick={this.openModal.bind(this, "/guest")} className="current">Guest Login!</li>
+          </ul>
+        </nav>
+      )
+    }
+
+    return(
+      <div>
+        {this.show}
+        <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
+          <SessionFormContainer formType={this.state.formType} closeModal={this.closeModal.bind(this)}/>
+        </Modal>
+      </div>
+
+    )
+  }
+
 }
 
-export default Greeting;
+// export default Greeting;
