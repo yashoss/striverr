@@ -39,7 +39,7 @@ export default class Greeting extends React.Component{
       style:{
         overlay : {
           position        : 'fixed',
-          top             : 0,
+          top             : 80,
           left            : 0,
           right           : 0,
           bottom          : 0,
@@ -76,6 +76,17 @@ export default class Greeting extends React.Component{
 
   componentWillReceiveProps(){
     this.closeModal();
+    $(".login-signup").hide();
+  }
+
+  signupHeight(path){
+    this.state.style.content.height = "500px";
+    this.openModal(path);
+  }
+
+  loginHeight(path){
+    this.state.style.content.height = "450px";
+    this.openModal(path);
   }
 
   render(){
@@ -93,9 +104,9 @@ export default class Greeting extends React.Component{
       this.show.push(
         <nav className="login-signup">
           <ul>
-            <li key="login" onClick={this.openModal.bind(this, "/login")} className="current">Login</li>
-            <li key="signup" onClick={this.openModal.bind(this, "/signup")} className="current">Sign up!</li>
-            <li key="guest" onClick={this.openModal.bind(this, "/guest")} className="current">Guest Login!</li>
+            <li id="login" onClick={this.loginHeight.bind(this, "/login")} className="current">Login</li>
+            <li id="signup" onClick={this.signupHeight.bind(this, "/signup")} className="current">Sign up!</li>
+            <li id="guest" onClick={this.loginHeight.bind(this, "/guest")} className="current">Guest Login!</li>
           </ul>
         </nav>
       )

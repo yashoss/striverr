@@ -65,7 +65,7 @@ export default class GigsIndex extends React.Component{
           <img src={this.gigs[key].photo_url} />
           {this.gigs[key].title}
           <p>
-            ${this.gigs[key].price}
+            Price: ${this.gigs[key].price}
           </p>
             <div className="details">
               <h1>{this.gigs[key].user.username}</h1>

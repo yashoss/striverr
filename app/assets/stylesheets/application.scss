@@ -30,7 +30,29 @@ nav.login-signup {
   color: lightblue;
   display: inline-block;
   float: right;
-  margin-top: -70px
+  margin-top: -70px;
+  font-size: 20px;
+}
+
+nav.login-signup li{
+  cursor: pointer;
+}
+
+li.current#guest {
+  background-color: #00b22d;
+  padding: 5px;
+  line-height: 19px;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: -4px;
+}
+
+nav.login-signup li:hover{
+  color: #09E109;
+}
+
+li.current#guest:hover{
+  background-color: darkgreen;
 }
 
 /* line 30, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -162,6 +184,7 @@ hgroup.header-group {
   background-color: transparent;
   justify-content: flex-end;
   margin-top: -90px;
+  margin-right: 150px;
 }
 
 /* line 122, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -204,7 +227,7 @@ h2.header-name:hover {
 #gigs-index ul li img {
   height: 130px;
   width: 222px;
-  margin-left: -10px;
+  margin-left: -2px;
 }
 
 /* line 153, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -1122,6 +1145,14 @@ li#all {
     left: 0;
   }
 }
+
+.wrapper-background{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
 /* line 787, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 898, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1013, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -1758,7 +1789,7 @@ footer h1 {
 /* line 1456, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 1608, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 hgroup.header-group a:hover {
-  color: #e9ece5;
+  color: #09E109;
 }
 
 /* line 1314, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
