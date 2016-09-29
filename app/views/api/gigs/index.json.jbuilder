@@ -11,5 +11,13 @@
     json.user do
       json.username gig.user.username
     end
+    json.reviews do
+      gig.reviews.each do |review|
+        json.set! review.id do
+          json.rating review.rating
+        end
+      end
+    end
+    
   end
 end

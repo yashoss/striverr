@@ -61,19 +61,30 @@ export default class GigsIndex extends React.Component{
     const gigs_list = [];
     this.gigs = this.props.gigs;
     for (let key in this.gigs){
+      let score = 0;
+      let count = 0;
+      for (let r in this.gigs[key].reviews){
+        score += this.gigs[key].reviews[r].rating
+        count += 1;
+      }
+      if (count > 0){
+        score /= count * 5;
+        score *= 100;
+      }
+
       gigs_list.push(
           <li key={key} onClick={this.openModal.bind(this, key)}>
           <div className="holder">
-          <div className="image">
+          <div className="image" id="image-show">
+          <p className="username-index">{this.gigs[key].user.username}</p>
+          <div className="star-ratings-sprite"><span id={`star-ratings-sprite-rating-${key}`} id="stars" style={{width: `${score}%`}} className="star-ratings-sprite-rating"></span></div>
           <img src={this.gigs[key].photo_url} />
-          {this.gigs[key].title}
-          <p>
+          <p className="title-index">
+            {this.gigs[key].title}
+          </p>
+          <p className="index-price">
             Price: ${this.gigs[key].price}
           </p>
-            <div className="details">
-              <h1>{this.gigs[key].user.username}</h1>
-              <p>{this.gigs[key].description}</p>
-            </div>
           </div>
           </div>
           </li>
