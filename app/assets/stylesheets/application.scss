@@ -2889,8 +2889,8 @@ h1.close:hover {
 /* line 2499, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 2695, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 .holder .image:hover p.username-index {
-  -webkit-transition: height 1000ms;
-  -webkit-transition: opacity 1000ms;
+  -webkit-transition: height 500ms;
+  -webkit-transition: opacity 500ms;
   opacity: 1;
   height: 19px;
 }
@@ -2900,7 +2900,7 @@ h1.close:hover {
 /* line 2702, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.username-index {
   -webkit-transition: height 500ms;
-  -webkit-transition: opacity 400ms;
+  -webkit-transition: opacity 500ms;
   float: left;
   margin-top: 3px;
   margin-bottom: 0;
