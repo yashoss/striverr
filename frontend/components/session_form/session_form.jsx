@@ -88,7 +88,7 @@ class SessionForm extends React.Component {
 									className="login-input" />
 
 							<br />
-							<input type="submit" value="Submit" />
+							<input type="submit" className="login-submit" value="Submit" />
 						</div>
 					</form>
 				</div>
@@ -116,7 +116,7 @@ class SessionForm extends React.Component {
 										className="login-input" />
 
 								<br />
-								<input type="submit" value="Submit" />
+								<input type="submit" className="login-submit" value="Submit" />
 							</div>
 						</form>
 					</div>
@@ -144,7 +144,7 @@ class SessionForm extends React.Component {
 										readOnly={true} />
 
 								<br />
-								<input type="submit" value="Submit" />
+								<input type="submit" className="login-submit" value="Submit" />
 							</div>
 						</form>
 					</div>

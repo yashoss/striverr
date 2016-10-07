@@ -4,11 +4,11 @@ import GigsIndexContainer from '../gigs/gigs_index_container';
 
 const Home = () => {
   var img1={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg' + ')'
+    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7077/man-people-office-writing.jpg' + ')'
   }
 
   var img2={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7375/startup-photos.jpg' + ')'
+    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7354/startup-photos.jpg' + ')'
   }
 
   var img3={

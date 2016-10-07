@@ -42,8 +42,13 @@ class GigShow extends React.Component{
       )
     }else{
       const reviewsArray = [];
+      let num = 0;
       for(let key in gig.reviews){
         let review = gig.reviews[key];
+        let stars = "";
+        for(let i=0; i<review.rating; i++){
+          stars += String.fromCharCode(9733);
+        }
         reviewsArray.push(
           <li key={`review-${key}`} className="review-item">
             <div className="reviewer">
@@ -53,7 +58,7 @@ class GigShow extends React.Component{
               </a>
             </div>
             <div className="review-gut">
-              <span className="review-rating">rated: {review.rating}/5</span>
+              <span className="review-rating">rated: <div className="stars2">{stars}</div></span>
               <p className="review-body">{review.body}</p>
             </div>
           </li>
@@ -63,8 +68,8 @@ class GigShow extends React.Component{
             <div className="gig-show-container">
               <h1 className="gig-title">{gig.title}</h1>
               <div className="gig-pic">
-                <h3>{gig.category}</h3>
                 <img src={gig.photo_url}/>
+                <h3>{gig.category}</h3>
               </div>
               <div className="gig-price-info">
                 <ul>

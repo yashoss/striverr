@@ -11,9 +11,9 @@ User.create!(username: "AnnRobinson", password: "password", email: "ann.robinson
   description: "I am an avid reader and writer. I attended University of Chicago and received my masters in comparative literature. I specialize in creative writing. I get along with words very well.",
   profile_views: Faker::Number.digit, photo_url: "https://assets.entrepreneur.com/content/16x9/822/20150406145944-dos-donts-taking-perfect-linkedin-profile-picture-selfie-mobile-camera-2.jpeg")
 
-User.create!(username: "illusionMaster", password: "password", email: "nowyouseeme@yopmail.com",
-  description: "I am a great magician! Your clothes are red!",
-  profile_views: Faker::Number.digit, photo_url: "https://twistedsifter.files.wordpress.com/2012/09/trippy-profile-pic-portrait-head-on-and-from-side-angle.jpg")
+User.create!(username: "ttechDev", password: "password", email: "nowyouseeme@yopmail.com",
+  description: "I believe that every company, business, website & Artist needs a Mobile APP these days. I can do it for you. Mobile App is a great tool for Improving your Company, Business, Website, Blog, Facebook page, and more.",
+  profile_views: Faker::Number.digit, photo_url: "https://cldn0.fiverrcdn.com/fiverr/t_profile_original/profile/photos/757239/original/set2.jpg")
 
 User.create!(username: "philster", password: "password", email: "phil.wang@yopmail.com",
   description: "Hey guys, I am recent graduate with a major in biological sciences. I am a jack of all trades, and you won't be disappointed with any of my work!",

@@ -43,7 +43,7 @@ export default class Greeting extends React.Component{
           left            : 0,
           right           : 0,
           bottom          : 0,
-          backgroundColor : 'rgba(255, 255, 255, 0.0)',
+          backgroundColor : 'rgba(255, 255, 255, 0.75)',
           zIndex          : 999,
           transition      : "all 1s ease"
         },
@@ -53,7 +53,10 @@ export default class Greeting extends React.Component{
           height          : '450px',
           border          : '1px solid #ccc',
           padding         : '20px',
-          backgroundColor : 'rgba(156, 174, 190, 0.79)'
+          backgroundColor : 'rgba(156, 174, 190, 0.79)',
+          background      : 'url("https://static.pexels.com/photos/87063/pexels-photo-87063.jpeg")',
+          opacity         : '0.95',
+          backgroundSize  : 'cover'
 
         }
       }
