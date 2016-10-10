@@ -24,9 +24,21 @@ export default class Dashboard extends React.Component{
     let gig_views = 0;
     const gigs_array = [];
     let userLinks;
+    let rating = 0;
+    let reviews_count = 0;
+    let score = 0;
     for(let key in user.gigs){
       let gig = user.gigs[key];
       gig_views += gig.gig_views;
+      for(let id in gig.reviews){
+        reviews_count++;
+        rating += gig.reviews[id].rating;
+      }
+      if (reviews_count > 0){
+        score = rating / reviews_count;
+        score /= 5;
+      }
+
       if(this.props.currentUser && this.props.currentUser.id === user.id){
         userLinks = () => (
           <div className="user-gig-links">
@@ -41,19 +53,26 @@ export default class Dashboard extends React.Component{
         );
       };
       gigs_array.push(
-          <li  key={`${user.id}-gig-${gig.id}`}>
-            <div className="left-side-user-gig">
-              <h3 className="user-gig-title">{gig.title}</h3>
-              <img className="user-gig-img" src={gig.photo_url} />
-            </div>
-            <div className="right-side-user-gig">
-              <h3 className="description-header">Description</h3>
-              <p className="user-gig-description">{gig.description}</p>
-            </div>
-            {userLinks()}
-          </li>
+        <li key={key}>
+        <div className="holder">
+        <div className="image" id="image-show">
+
+        <img src={gig.photo_url} />
+        <p className="title-index">
+          {gig.title}
+        </p>
+        {userLinks()}
+        <p className="index-price">
+          Price: ${gig.price}
+        </p>
+        </div>
+        </div>
+        </li>
       );
     };
+    if (reviews_count > 0){
+      rating /= (reviews_count * 5);
+    }
 
     let total_sales = 0;
     const orders_array = [];
@@ -82,44 +101,49 @@ export default class Dashboard extends React.Component{
           </li>
         )
       };
+      var img={
+        backgroundImage: 'url(' + 'https://static.pexels.com/photos/185576/pexels-photo-185576.jpeg' + ')'
+      }
 
     const toRender = [
-      <div className="dashboard">
-        <h1 className="username">{user.username}</h1>
+      <div className="dashboard" style={img}>
         <img src={user.photo_url} className="profile-pic" />
-        <div className="profile-info">
+        <h1 className="username">{`Hi, I'm ${user.username}!`}</h1>
         <div className="stats">
-            <h2 className="stats-header">Statistics</h2>
-              <div className="stats-container">
-                <span className="user-orders">
-                  <h3 className="orders-header">Orders</h3>
-                  <h4 className="orders-stats">{total_sales}</h4>
-                </span>
-                <span className="users-gig-views">
-                  <h3 className="gig-views-header">Gig Views</h3>
-                  <h4 className="gig-views">{gig_views}</h4>
-                </span>
-                <span className="users-profile-views">
-                  <h3 className="profile-views-header">Profile Views</h3>
-                  <h4 className="profile-views">{user.profile_views}</h4>
-                </span>
-              </div>
-            </div>
+          <div className="stats-container">
+            <span className="user-orders">
+              <h3 className="orders-header">Orders</h3>
+              <h4 className="orders-stats">{total_sales}</h4>
+            </span>
+            <span className="users-gig-views">
+              <h3 className="gig-views-header">Gig Views</h3>
+              <h4 className="gig-views">{gig_views}</h4>
+            </span>
+            <span className="users-profile-views">
+              <h3 className="profile-views-header">Profile Views</h3>
+              <h4 className="profile-views">{user.profile_views}</h4>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    ]
+    return(
+      <div className="user-dashboard">
+        {toRender}
+        <div className="profile-info">
             <div className="user-description">
             <h2 className="user-description-header">Description:</h2>
               <p>{user.description}</p>
           </div>
         </div>
-      </div>
-    ]
-    return(
-      <div className="user-dashboard">
-        {toRender}
         <div className="users-gigs">
-          <h2 className="users-gigs-header">Gigs</h2>
+          <div id="gigs-index">
           <ul className="users-gigs-list">
+          <h2 className="users-gigs-header">Gigs:</h2>
             {gigs_array}
           </ul>
+          </div>
         </div>
         <div className="users-orders">
           <h2 className="users-orders-header">Orders</h2>

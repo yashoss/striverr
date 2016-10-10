@@ -11,6 +11,18 @@ json.gigs do
       json.revisions gig.revisions
       json.description gig.description
       json.gig_views gig.gig_views
+      json.reviews do
+        gig.reviews.each do |review|
+          json.set! review.id do
+            json.body review.body
+            json.rating review.rating
+            json.author review.author.username
+            json.pic review.author.photo_url
+            json.author_id review.author.id
+            json.gig_id review.gig_id
+          end
+        end
+      end
     end
   end
 end
