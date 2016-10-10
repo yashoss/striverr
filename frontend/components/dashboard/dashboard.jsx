@@ -1,10 +1,55 @@
 import React from 'react';
 import {Link, hashHistory} from 'react-router';
+import Modal from 'react-modal';
+import GigShowContainer from '../gigs/gigs_show_container';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 export default class Dashboard extends React.Component{
 
   constructor(props){
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state={
+      key: -1,
+      modal: false,
+      style:{
+        overlay : {
+          position        : 'fixed',
+          top             : 0,
+          left            : 0,
+          right           : 0,
+          bottom          : 0,
+          backgroundColor : 'rgba(255, 255, 255, 0.75)',
+          zIndex          : 999,
+          transition      : "all 1s ease"
+        },
+        content : {
+          margin          : 'auto',
+          width           : "865px",
+          height          : "68%",
+          border          : '1px solid #ccc',
+          padding         : '10px',
+          backgroundColor : 'rgba(156, 174, 190, 0.79)',
+          overflowY       : 'hidden'
+
+        }
+      }
+    };
+
+  }
+
+  openModal(key){
+    this.setState({modal: true, key: key});
+    $("html, body").css('overflowY', 'hidden');
+  }
+
+  closeModal(){
+    this.setState({modal: false});
+    $("html, body").css('overflowY', 'initial')
+  }
+
+  handleClick(id){
+    hashHistory.push(`/gigs/${id}`);
   }
 
   componentDidMount(){
@@ -53,7 +98,7 @@ export default class Dashboard extends React.Component{
         );
       };
       gigs_array.push(
-        <li key={key}>
+        <li key={key} onClick={this.openModal.bind(this, key)}>
         <div className="holder">
         <div className="image" id="image-show">
 
@@ -136,6 +181,12 @@ export default class Dashboard extends React.Component{
             <h2 className="user-description-header">Description:</h2>
               <p>{user.description}</p>
           </div>
+          <div className="users-orders">
+            <h2 className="users-orders-header">Orders</h2>
+            <ul className="users-orders-list">
+              {orders_array}
+            </ul>
+          </div>
         </div>
         <div className="users-gigs">
           <div id="gigs-index">
@@ -143,13 +194,13 @@ export default class Dashboard extends React.Component{
           <h2 className="users-gigs-header">Gigs:</h2>
             {gigs_array}
           </ul>
+          <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
+            <div className="close-button">
+              <h1 className="close" onClick={this.closeModal.bind(this)}>X</h1>
+            </div>
+            <GigShowContainer id={this.state.key}/>
+          </Modal>
           </div>
-        </div>
-        <div className="users-orders">
-          <h2 className="users-orders-header">Orders</h2>
-          <ul className="users-orders-list">
-            {orders_array}
-          </ul>
         </div>
       </div>
     );
