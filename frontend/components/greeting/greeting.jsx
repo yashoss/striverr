@@ -15,9 +15,9 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout, goToUser) => (
 	<hgroup className="header-group">
+  <div onClick={goToUser.bind(null, currentUser.id)}><h2 className="header-name">Hi, {currentUser.username}!</h2></div>
     <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
     <Link to={`/carts/${currentUser.id}`} activeClassName="current">Cart</Link>
-		<div onClick={goToUser.bind(null, currentUser.id)}><h2 className="header-name">Hi, {currentUser.username}!</h2></div>
 		<a href="" className="logout" onClick={logout}>Log Out</a>
 	</hgroup>
 );
@@ -96,9 +96,9 @@ export default class Greeting extends React.Component{
     if (this.props.currentUser){
       this.show.push(
         <hgroup className="header-group">
+        <div onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
         <Link to="/gigs/new" activeClassName="post">Post new gig!</Link>
         <Link to={`/carts/${this.props.currentUser.id}`} activeClassName="cart">Cart</Link>
-        <div onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
         <a href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
         </hgroup>
       )
