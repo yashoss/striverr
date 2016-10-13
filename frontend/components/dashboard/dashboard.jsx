@@ -99,8 +99,8 @@ export default class Dashboard extends React.Component{
       };
       gigs_array.push(
         <li key={key} onClick={this.openModal.bind(this, key)}>
-        <div className="holder">
-        <div className="image" id="image-show">
+        <div key="holder" className="holder">
+        <div key="image" className="image" id="image-show">
 
         <img src={gig.photo_url} />
         <p className="title-index">
@@ -127,11 +127,11 @@ export default class Dashboard extends React.Component{
         total_sales += 1;
           orders_array.push(
             <li  key={`${user.id}-order-${order.id}`}>
-              <div className="left-side-user-gig">
+              <div key="left-user" className="left-side-user-gig">
                 <h3 className="user-gig-title">{order.title}</h3>
                 <img className="user-gig-img" src={order.photo_url} />
               </div>
-              <div className="right-side-user-gig">
+              <div key="right-user" className="right-side-user-gig">
                 <h3 className="description-header">Deliver to:</h3>
                 <p className="user-gig-description">{order.email}</p>
               </div>
@@ -141,7 +141,7 @@ export default class Dashboard extends React.Component{
           total_sales += 1;
         };
         orders_array.push(
-          <li className="empty">
+          <li key="orders" className="empty">
             <h3 className="user-gig-title">Private</h3>
           </li>
         )
@@ -151,11 +151,11 @@ export default class Dashboard extends React.Component{
       }
 
     const toRender = [
-      <div className="dashboard" style={img}>
+      <div key="dashboard" className="dashboard" style={img}>
         <img src={user.photo_url} className="profile-pic" />
         <h1 className="username">{`Hi, I'm ${user.username}!`}</h1>
-        <div className="stats">
-          <div className="stats-container">
+        <div key="stats" className="stats">
+          <div key="stats" className="stats-container">
             <span className="user-orders">
               <h3 className="orders-header">Orders</h3>
               <h4 className="orders-stats">{total_sales}</h4>
@@ -174,28 +174,28 @@ export default class Dashboard extends React.Component{
 
     ]
     return(
-      <div className="user-dashboard">
+      <div key="user-dash" className="user-dashboard">
         {toRender}
-        <div className="profile-info">
-            <div className="user-description">
+        <div key="profile-info" className="profile-info">
+            <div key="user description" className="user-description">
             <h2 className="user-description-header">Description:</h2>
               <p>{user.description}</p>
           </div>
-          <div className="users-orders">
+          <div key="orders" className="users-orders">
             <h2 className="users-orders-header">Orders</h2>
             <ul className="users-orders-list">
               {orders_array}
             </ul>
           </div>
         </div>
-        <div className="users-gigs">
-          <div id="gigs-index">
+        <div key="users-gigs" className="users-gigs">
+          <div key="gigs-index" id="gigs-index">
           <ul className="users-gigs-list">
           <h2 className="users-gigs-header">Gigs:</h2>
             {gigs_array}
           </ul>
           <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
-            <div className="close-button">
+            <div key="close" className="close-button">
               <h1 className="close" onClick={this.closeModal.bind(this)}>X</h1>
             </div>
             <GigShowContainer id={this.state.key}/>

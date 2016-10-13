@@ -54,7 +54,7 @@ class ReviewForm extends React.Component{
       )
     }else{
       toRender.push(
-          <h3 className="review-label">Reviews:<h4 className="review-notify">please login to leave a review!</h4></h3>
+          <h3 key="something-unique" className="review-label">Reviews:<p className="review-notify">please login to leave a review!</p></h3>
       )
     }
     return(

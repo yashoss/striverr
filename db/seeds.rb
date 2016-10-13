@@ -20,20 +20,20 @@ User.create!(username: "philster", password: "password", email: "phil.wang@yopma
   profile_views: Faker::Number.digit, photo_url: "https://upload.wikimedia.org/wikipedia/en/7/70/Shawn_Tok_Profile.jpg")
 
 User.create!(username: "atlas", password: "password", email: "greekatlas@yopmail.com",
-  description: "World class body builder and personal trainer",
+  description: "I have delivered over 300 orders in Striverr. 99% of my customers are very happy with my services. Hire me and you will be among the customers who think I'm great at what I do!",
   profile_views: Faker::Number.digit, photo_url: "http://static.boredpanda.com/blog/wp-content/uploads/2015/01/funny-facebook-profile-photos-1.jpg")
 
 User.create!(username: "makeup-magician", password: "password", email: "mysticbeauty@yopmail.com",
-  description: "Hello wonderful people! I am a makeup artist. The body is my canvas!",
+  description: "I am a vector artist and I mostly draw a cartoon vector. High quality drawings, with a professional service! Feel free to contact me anytime.",
   profile_views: Faker::Number.digit, photo_url: "http://whatsappdp.net/wp-content/uploads/2016/03/cool-profile-pics-for-whatsapp.jpg")
 
-User.create!(username: "penANDpaper", password: "password", email: "penandpaper@yopmail.com",
-  description: "It's all in my name, I bring the pen and paper together.",
-  profile_views: Faker::Number.digit, photo_url: "https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg")
+User.create!(username: "PenPaper", password: "password", email: "PenPaper@yopmail.com",
+  description: "I am a commercial, lit and film writer. I have written scripts for ads on many network channels, television series and narrative films.",
+  profile_views: Faker::Number.digit, photo_url: "http://www.julieeliselandry.com/uploads/4/6/1/0/46102119/6496065_orig.jpg")
 
-User.create!(username: "darthJacob", password: "password", email: "jacob.wesser@yopmail.com",
-  description: "I love movies, video games, and the internet!",
-  profile_views: Faker::Number.digit, photo_url: "http://cdn.images.express.co.uk/img/dynamic/59/590x/Facebook-Star-Wars-Force-Awakens-UK-Paris-French-Flag-Design-The-Force-Awakens-Star-Wars-Awakens-Profile-Picture-Star-Wars-Theme-626859.jpg")
+User.create!(username: "MooneyCat", password: "password", email: "mooneycat@yopmail.com",
+  description: "I can uncurse your by using some ancient secret techniques that I've discovered after 30 years of practice, study and meditation. For those who are really cursed, this is a very effective way to get rid of troubles. If your problems are caused by a curse, then they will simply vanish.",
+  profile_views: Faker::Number.digit, photo_url: "https://cldn0.fiverrcdn.com/fiverr/t_profile_original/profile/photos/14356125/original/l1.jpg")
 
 
 User.create!(username: "Guest", password: "password", email: "guestemail@yopmail.com",
@@ -56,8 +56,8 @@ Gig.create!(user_id: 3, title: "Will test your website!", category: "web-dev",
       description: "I will go through your website and find any bugs you might have. I will include in a text file how to recreate the bugs.", photo_url: "http://pre09.deviantart.net/5e00/th/pre/i/2007/248/9/a/matrix_screen_saver_by_icyalaska.jpg",
       delivery_time: 5, revisions: 1, price: 5, gig_views: 22)
 
-Gig.create!(user_id: 2, title: "Will make a watermelon sculpture", category: "art",
-      description: "Will carve a sculpture out of a single watermelon!", photo_url: "http://occ144datkn3vrjlq7r63p19.wpengine.netdna-cdn.com/wp-content/uploads/2014/06/Alligator-Watermelon-Carving.jpg",
+Gig.create!(user_id: 2, title: "Will design Eye Catching Logo for you within 24hrs", category: "design",
+      description: "2 premium Logo Concepts with Vector Editable files.", photo_url: "http://www.senseimarketing.com/wp-content/uploads/2015/01/Logos.jpg",
       delivery_time: 3, revisions: 1, price: 50, gig_views: 3)
 
 Gig.create!(user_id: 7, title: "Will promote your world of warcraft clan to the strongest players!", category: "gaming",
@@ -70,7 +70,7 @@ Gig.create!(user_id: 2, title: "Will teach you a magic trick!", category: "gamin
       delivery_time: 2, revisions: 2, price: 5, gig_views: 15)
 
 Gig.create!(user_id: 4, title: "Will send you a training video!", category: "art",
-      description: "I will send you a workout training video to help sculpt your body like a Greed god/goddess!", photo_url: "http://spsgear.eu/wp-content/uploads/2014/06/hexs.jpg",
+      description: "I will send you a workout training video to help sculpt your body like a Greed god/goddess!", photo_url: "http://www.hdwallpaper.nu/wp-content/uploads/2015/06/black_and_white_typography_exercises_workout_motivation_motivational_1920x1080_wallpaper_Wallpaper.jpg",
       delivery_time: 5, revisions: 1, price: 10, gig_views: 4)
 
 Gig.create!(user_id: 8, title: "Will help you determine the layout of your space!", category: "design",
@@ -84,6 +84,11 @@ Gig.create!(user_id: 1, title: "Will write you a biography!", category: "writing
 Gig.create!(user_id: 3, title: "Will make you a mobile app!", category: "web-dev",
       description: "One multiplatform mobile application!", photo_url: "https://www.mobiprobe.com/components/img/mobile_apps.jpg",
       delivery_time: 5, revisions: 1, price: 100, gig_views: 3)
+
+Gig.create!(user_id: 3, title: "Will help you think of 5 website names!", category: "web-dev",
+      description: "I will help you think of 5 names for either your company / website / product / app / .com URL.!", photo_url: "https://sellorelse.ogilvy.com/wp-content/uploads/2016/06/creativity_technology.png",
+      delivery_time: 5, revisions: 1, price: 5, gig_views: 3)
+
 
 
 Order.create!( gig_id:1, user_id:8)
@@ -103,15 +108,15 @@ Order.create!( gig_id:4, user_id:8)
 Order.create!( gig_id:11, user_id:4)
 Order.create!( gig_id:7, user_id:5)
 
-Review.create!( gig_id:1, author_id:8, body: "The produce is phenomenal and they put so much heart into it.", rating: 5)
+Review.create!( gig_id:1, author_id:8, body: "The product is phenomenal.", rating: 5)
 Review.create!( gig_id:2, author_id:8, body: "Hats off to you!", rating: 4 )
 Review.create!( gig_id:3, author_id:4, body: "The logo was beautiful!", rating: 5)
 Review.create!( gig_id:4, author_id:1, body: "Did a pretty good job.", rating: 3)
 Review.create!( gig_id:5, author_id:6, body: "Many regrets", rating: 1)
 Review.create!( gig_id:6, author_id:2, body: "My team is stacked!", rating: 5)
-Review.create!( gig_id:7, author_id:3, body: "Wow that was so simple!", raiting: 4)
-Review.create!( gig_id:8, author_id:5, body: "*wold whistle*", rating: 5)
-Review.create!( gig_id:9, author_id:7, body: "Love the flow of the design", rating: 4)
+Review.create!( gig_id:7, author_id:3, body: "Wow that was so simple!", rating: 4)
+Review.create!( gig_id:8, author_id:5, body: "*wolf whistle*", rating: 5)
+Review.create!( gig_id:9, author_id:7, body: "Love the flow", rating: 4)
 Review.create!( gig_id:10, author_id:6, body: "Did not deliver on time", rating: 2)
 Review.create!( gig_id:11, author_id:7, body: "It's pretty simplistic", rating: 3)
 Review.create!( gig_id:9, author_id:1, body: "Perfect feng shui", rating: 5)
@@ -119,3 +124,8 @@ Review.create!( gig_id:3, author_id:3, body: "Pleasure working with you", rating
 Review.create!( gig_id:4, author_id:8, body: "Notes were helpful", rating: 4)
 Review.create!( gig_id:11, author_id:4, body: "Not what I expected", rating: 2)
 Review.create!( gig_id:7, author_id:5, body: "Now you see me, now you...", rating: 5)
+
+Review.create!( gig_id:12, author_id:3, body: "Wow that was so simple!", rating: 4)
+Review.create!( gig_id:12, author_id:5, body: "*wolf whistle*", rating: 5)
+Review.create!( gig_id:5, author_id:7, body: "Love the flow", rating: 4)
+Review.create!( gig_id:3, author_id:7, body: "It's pretty simplistic", rating: 3)

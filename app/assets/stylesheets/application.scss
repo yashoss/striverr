@@ -593,6 +593,7 @@ h1.gig-title {
   margin-left: 56px;
   border-bottom: 1px solid lightgray;
   width: 600px;
+  height: 75px;
   margin-top: 2px;
   margin-bottom: 0;
 }
@@ -672,6 +673,7 @@ ul {
   float: right;
   width: 300px;
   position: relative;
+  height: 270px;
   margin-right: 10px;
   border: 1px solid lightgray;
   padding: 10px;
@@ -693,7 +695,7 @@ ul {
 .gig-user-info {
   float: right;
   display: flex;
-  height: 300px;
+  height: 234px;
   width: 300px;
   justify-content: flex-start;
   padding: 10px;
@@ -701,6 +703,7 @@ ul {
   background-color: aliceblue;
   margin: 10px;
   flex-direction: column;
+  padding-bottom: 0px;
 }
 
 /* line 338, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -1634,6 +1637,7 @@ span.gig-username:hover {
 /* line 1540, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 p.gig-user-description {
   overflow-y: auto;
+  margin-bottom: 3px;
 }
 
 /* line 743, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
@@ -1844,7 +1848,7 @@ ul.reviews-list {
   width: 500px;
   margin-left: 6%;
   display: flex;
-  height: 140px;
+  height: 85px;
   overflow-y: scroll;
   border-top: 0.5px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -5444,8 +5448,9 @@ h3.review-label {
 /* line 4804, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 5016, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
 /* line 5228, /home/yasin/Desktop/striverr/app/assets/stylesheets/application.scss */
-h4.review-notify {
+p.review-notify {
   padding: 0;
+  margin-top: 0;
   font-size: 16px;
   font-weight: 300;
 }

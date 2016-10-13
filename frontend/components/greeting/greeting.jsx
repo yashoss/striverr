@@ -4,18 +4,18 @@ import Modal from 'react-modal';
 import SessionFormContainer from '../session_form/session_form_container';
 
 const sessionLinks = () => (
-  <nav className="login-signup">
+  <nav key="login-signup" className="login-signup">
     <ul>
-      <li onClick={Greeting.openModal.bind(this, "/login")} className="current">Login</li>
-      <li onClick={Greeting.openModal.bind(this, "/signup")} className="current">Sign up!</li>
-      <li onClick={Greeting.openModal.bind(this, "/guest")} className="current">Guest Login!</li>
+      <li key="loginbutton" onClick={Greeting.openModal.bind(this, "/login")} className="current">Login</li>
+      <li key="signupbutton" onClick={Greeting.openModal.bind(this, "/signup")} className="current">Sign up!</li>
+      <li key="guestlogin" onClick={Greeting.openModal.bind(this, "/guest")} className="current">Guest Login!</li>
     </ul>
   </nav>
 );
 
 const personalGreeting = (currentUser, logout, goToUser) => (
-	<hgroup className="header-group">
-  <div onClick={goToUser.bind(null, currentUser.id)}><h2 className="header-name">Hi, {currentUser.username}!</h2></div>
+	<hgroup key="hgroup" className="header-group">
+  <div key="hname" onClick={goToUser.bind(null, currentUser.id)}><h2 className="header-name">Hi, {currentUser.username}!</h2></div>
     <Link to="/gigs/new" activeClassName="current">Post new gig!</Link>
     <Link to={`/carts/${currentUser.id}`} activeClassName="current">Cart</Link>
 		<a href="" className="logout" onClick={logout}>Log Out</a>
@@ -95,30 +95,30 @@ export default class Greeting extends React.Component{
   render(){
     if (this.props.currentUser){
       this.show.push(
-        <hgroup className="header-group">
-        <div onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
-        <Link to="/gigs/new" activeClassName="post">Post new gig!</Link>
-        <Link to={`/carts/${this.props.currentUser.id}`} activeClassName="cart">Cart</Link>
-        <a href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
+        <hgroup key="hgroup2" className="header-group">
+        <div key="hname2" onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
+        <Link key="linknew" to="/gigs/new" activeClassName="post">Post new gig!</Link>
+        <Link key="carts" to={`/carts/${this.props.currentUser.id}`} activeClassName="cart">Cart</Link>
+        <a key="getout" href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
         </hgroup>
       )
 
     } else {
       this.show.push(
-        <nav className="login-signup">
-          <ul>
-            <li id="login" onClick={this.loginHeight.bind(this, "/login")} className="current">Login</li>
-            <li id="signup" onClick={this.signupHeight.bind(this, "/signup")} className="current">Sign up!</li>
-            <li id="guest" onClick={this.loginHeight.bind(this, "/guest")} className="current">Guest Login!</li>
+        <nav key="login-signup2" className="login-signup">
+          <ul key="session">
+            <li key="loginbutton2" id="login" onClick={this.loginHeight.bind(this, "/login")} className="current">Login</li>
+            <li key="signupbutton2" id="signup" onClick={this.signupHeight.bind(this, "/signup")} className="current">Sign up!</li>
+            <li key="guestlogin2" id="guest" onClick={this.loginHeight.bind(this, "/guest")} className="current">Guest Login!</li>
           </ul>
         </nav>
       )
     }
 
     return(
-      <div>
+      <div key="greetings">
         {this.show}
-        <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
+        <Modal key="modal" isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
           <SessionFormContainer formType={this.state.formType} closeModal={this.closeModal.bind(this)}/>
         </Modal>
       </div>
