@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, hashHistory } from 'react-router';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session_form/session_form_container';
+import FontAwesome from 'react-fontawesome';
 
 const sessionLinks = () => (
   <nav key="login-signup" className="login-signup">
@@ -98,7 +99,7 @@ export default class Greeting extends React.Component{
         <hgroup key="hgroup2" className="header-group">
         <div key="hname2" onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
         <Link key="linknew" to="/gigs/new" activeClassName="post">Post new gig!</Link>
-        <Link key="carts" to={`/carts/${this.props.currentUser.id}`} activeClassName="cart">Cart</Link>
+        <Link key="carts" to={`/carts/${this.props.currentUser.id}`} activeClassName="cart"><FontAwesome name='shopping-cart' className='cart-icon' />Cart</Link>
         <a key="getout" href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
         </hgroup>
       )
