@@ -55,7 +55,7 @@ export default class Greeting extends React.Component{
           border          : '1px solid #ccc',
           padding         : '20px',
           backgroundColor : 'rgba(156, 174, 190, 0.79)',
-          background      : 'url("https://static.pexels.com/photos/87063/pexels-photo-87063.jpeg")',
+          background      : 'url("http://www.mediamavenandmore.com/wp-content/uploads/2016/10/huffington-post-blog-submission-guidelines-1200x800.jpg")',
           opacity         : '0.95',
           backgroundSize  : 'cover'
 
