@@ -97,10 +97,14 @@ export default class Greeting extends React.Component{
     if (this.props.currentUser){
       this.show.push(
         <hgroup key="hgroup2" className="header-group">
-        <div key="hname2" onClick={goToUser.bind(null, this.props.currentUser.id)}><h2 className="header-name">Hi, {this.props.currentUser.username}!</h2></div>
-        <Link key="linknew" to="/gigs/new" activeClassName="post">Post new gig!</Link>
-        <Link key="carts" to={`/carts/${this.props.currentUser.id}`} activeClassName="cart"><FontAwesome name='shopping-cart' className='cart-icon' />Cart</Link>
-        <a key="getout" href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a>
+          <div key="hname2" className="hname2" onClick={goToUser.bind(null, this.props.currentUser.id)}>
+            <div className="header-name">Hi, {this.props.currentUser.username}! &#9660;</div>
+          </div>
+          <ul className="dropdown">
+            <li><Link key="linknew" to="/gigs/new" activeClassName="post">Post new gig!</Link></li>
+            <li><Link key="carts" to={`/carts/${this.props.currentUser.id}`} activeClassName="cart"><FontAwesome name='shopping-cart' className='cart-icon' />Cart</Link></li>
+            <li><a key="getout" href="" className="logout" onClick={this.props.logout.bind(this)}>Log Out</a></li>
+          </ul>
         </hgroup>
       )
 

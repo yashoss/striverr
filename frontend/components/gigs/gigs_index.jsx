@@ -74,19 +74,19 @@ export default class GigsIndex extends React.Component{
 
       gigs_list.push(
           <li key={key} onClick={this.openModal.bind(this, key)}>
-          <div className="holder">
-          <div className="image" id="image-show">
-          <p className="username-index">{this.gigs[key].user.username}</p>
-          <div className="star-ratings-sprite"><span id={`star-ratings-sprite-rating-${key}`} id="stars" style={{width: `${score}%`}} className="star-ratings-sprite-rating"></span></div>
-          <img src={this.gigs[key].photo_url} />
-          <p className="title-index">
-            {this.gigs[key].title}
-          </p>
-          <p className="index-price">
-            Price: ${this.gigs[key].price}
-          </p>
-          </div>
-          </div>
+            <div className="holder">
+              <div className="image" id="image-show">
+                <p className="username-index">{this.gigs[key].user.username}</p>
+                <div className="star-ratings-sprite"><span id={`star-ratings-sprite-rating-${key}`} id="stars" style={{width: `${score}%`}} className="star-ratings-sprite-rating"></span></div>
+                <img src={this.gigs[key].photo_url} />
+                <p className="title-index">
+                  {this.gigs[key].title}
+                </p>
+                <p className="index-price">
+                  Price: ${this.gigs[key].price}
+                </p>
+              </div>
+            </div>
           </li>
         )
     }
