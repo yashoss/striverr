@@ -3408,12 +3408,14 @@ section.gradient button {
   text-shadow: -2px 2px #346392;
   background-color: #ff96hi64;
   background-image: -webkit-linear-gradient(top, #6496c8, #346392);
+  background-image: linear-gradient(top, #6496c8, #346392);
   border: none;
   border-radius: 15px;
 }
 
 section.gradient button:hover {
   background-image: -webkit-linear-gradient(bottom, #6496c8, #346392);
+  background-image: linear-gradient(bottom, #6496c8, #346392);
 }
 
 section.gradient button:active {
@@ -3439,6 +3441,7 @@ a.keep-shopping {
 
 a.keep-shopping:hover {
   background-image: -webkit-linear-gradient(bottom, #6496c8, #346392);
+  background-image: linear-gradient(bottom, #6496c8, #346392);
 }
 
 h1.username {
@@ -3540,6 +3543,7 @@ ul.users-gigs-list li {
   border-bottom: 1px solid #ccc;
   padding: 20px;
   background-image: -webkit-radial-gradient(#ccc, #eee);
+  background-image: radial-gradient(#ccc, #eee);
   background-color: white;
 }
 
@@ -3661,6 +3665,7 @@ hgroup.header-group a {
 
 .dropdown {
   -webkit-transition: opacity 500ms ease, margin 2000ms ease;
+  transition: opacity 500ms ease, margin 2000ms ease;
   margin: -140px 0 0 0;
   opacity: 0;
   padding: 0;
@@ -3668,6 +3673,7 @@ hgroup.header-group a {
 
 .header-group:hover > .dropdown {
   -webkit-transition: opacity 1000ms ease, margin 300ms ease;
+  transition: opacity 1000ms ease, margin 300ms ease;
   margin: 0;
   opacity: 1;
 }
@@ -4394,6 +4400,8 @@ div#slogan {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  text-stroke-width: 1px;
+  text-stroke-color: black;
   font-size: 26px;
   margin-left: 250px;
   font-family: "Pluto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4609,6 +4617,7 @@ h1.close:hover {
 .star-ratings-sprite {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
   -webkit-transition: height 500ms;
+  transition: height 500ms;
   font-size: 0;
   line-height: 0;
   overflow: hidden;
@@ -4628,12 +4637,15 @@ h1.close:hover {
 
 .holder .image:hover .star-ratings-sprite {
   -webkit-transition: height 500ms;
+  transition: height 500ms;
   height: 21px;
 }
 
 .holder .image:hover p.username-index {
   -webkit-transition: height 500ms;
   -webkit-transition: opacity 500ms;
+  transition: height 500ms;
+  transition: opacity 500ms;
   opacity: 1;
   height: 19px;
 }
@@ -4645,6 +4657,8 @@ div#image-show:hover p.title-index {
 p.username-index {
   -webkit-transition: height 500ms;
   -webkit-transition: opacity 500ms;
+  transition: height 500ms;
+  transition: opacity 500ms;
   float: left;
   margin-top: 3px;
   margin-bottom: 0;
@@ -4727,6 +4741,7 @@ div#search {
   margin-top: -2px;
   margin-left: 6px;
   -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
 }
 
 span.review-rating {
@@ -4751,6 +4766,7 @@ h4.login-greet {
   color: white;
   font-size: 24px;
   -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
 }
 
 .login-submit {
