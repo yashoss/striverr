@@ -4,19 +4,19 @@ import GigsIndexContainer from '../gigs/gigs_index_container';
 
 const Home = () => {
   var img1={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7077/man-people-office-writing.jpg' + ')'
+    backgroundImage: 'url(' + 'http://res.cloudinary.com/dzjhhor8g/image/upload/v1482357306/slider1-min_xmqkty.jpg' + ')'
   }
 
   var img2={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/7354/startup-photos.jpg' + ')'
+    backgroundImage: 'url(' + 'http://res.cloudinary.com/dzjhhor8g/image/upload/v1482357294/slider2-min_cktkgz.jpg' + ')'
   }
 
   var img3={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/26742/pexels-photo.jpg' + ')'
+    backgroundImage: 'url(' + 'http://res.cloudinary.com/dzjhhor8g/image/upload/v1482357304/slider3-min_u2svpo.jpg' + ')'
   }
 
   var img4={
-    backgroundImage: 'url(' + 'https://static.pexels.com/photos/28462/pexels-photo-28462.jpg' + ')'
+    backgroundImage: 'url(' + 'http://res.cloudinary.com/dzjhhor8g/image/upload/v1482357296/slider4-min_ubqgtp.jpg' + ')'
   }
 
   return(
