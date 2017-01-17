@@ -3044,8 +3044,8 @@ div.header-name:hover {
 }
 #gigs-index ul li img {
   height: 130px;
-  width: 222px;
-  margin-left: -2px;
+  width: 230px;
+  margin-top: -3px;
 }
 
 #gigs-index ul li {
@@ -3060,7 +3060,6 @@ div.header-name:hover {
   background-color: white;
   margin-right: 40px;
   cursor: pointer;
-  border-radius: 10px;
 }
 
 ul.nav-items {
@@ -3115,8 +3114,6 @@ li#writing {
 div.main-home img {
   width: 100%;
   height: 400px;
-  margin: 5px;
-  border: 1px solid black;
   background-color: white;
 }
 
@@ -4284,7 +4281,6 @@ hgroup.header-group a:hover {
 .holder {
   margin: 0 auto;
   height: 100%;
-  padding: 5px;
   background-color: #fff;
 }
 
@@ -4350,7 +4346,7 @@ h4.cart-description-header {
 div#slogan {
   position: absolute;
   z-index: 99;
-  color: rgba(250, 250, 250, 0.8);
+  color: rgba(250, 250, 250, 0.9);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 26px;
@@ -4574,14 +4570,14 @@ h1.close:hover {
 
 .holder .image:hover .star-ratings-sprite {
   -webkit-transition: height 500ms;
-  height: 21px;
+  height: 24px;
 }
 
 .holder .image:hover p.username-index {
   -webkit-transition: height 500ms;
   -webkit-transition: opacity 500ms;
   opacity: 1;
-  height: 19px;
+  height: 22px;
 }
 
 div#image-show:hover p.title-index {
@@ -4602,11 +4598,13 @@ p.index-price {
   position: absolute;
   right: 0;
   bottom: 0;
+  padding-right: 5px;
 }
 
 p.title-index {
   height: 55px;
   overflow: hidden;
+  padding-left: 5px;
 }
 
 .reviewer a p {
