@@ -19,7 +19,7 @@ export default class GigsIndex extends React.Component{
           left            : 0,
           right           : 0,
           bottom          : 0,
-          backgroundColor : 'rgba(255, 255, 255, 0.75)',
+          backgroundColor : 'rgba(52,73,94,0.7)',
           zIndex          : 999,
           transition      : "all 1s ease"
         },
@@ -29,7 +29,7 @@ export default class GigsIndex extends React.Component{
           height          : "635px",
           border          : '1px solid #ccc',
           padding         : '10px',
-          backgroundColor : 'rgba(156, 174, 190, 0.79)',
+          backgroundColor : 'rgba(52,73,94,0.7)',
           overflowY       : 'hidden'
 
         }
@@ -74,19 +74,19 @@ export default class GigsIndex extends React.Component{
 
       gigs_list.push(
           <li key={key} onClick={this.openModal.bind(this, key)}>
-            <div className="holder">
-              <div className="image" id="image-show">
-                <p className="username-index">{this.gigs[key].user.username}</p>
-                <div className="star-ratings-sprite"><span id={`star-ratings-sprite-rating-${key}`} id="stars" style={{width: `${score}%`}} className="star-ratings-sprite-rating"></span></div>
-                <img src={this.gigs[key].photo_url} />
-                <p className="title-index">
-                  {this.gigs[key].title}
-                </p>
-                <p className="index-price">
-                  Price: ${this.gigs[key].price}
-                </p>
-              </div>
+          <div className="holder">
+            <div className="image" id="image-show">
+              <p className="username-index">{this.gigs[key].user.username}</p>
+              <div className="star-ratings-sprite"><span id={`star-ratings-sprite-rating-${key}`} id="stars" style={{width: `${score}%`}} className="star-ratings-sprite-rating"></span></div>
+              <img src={this.gigs[key].photo_url} />
+              <p className="title-index">
+                {this.gigs[key].title}
+              </p>
+              <p className="index-price">
+                Price: ${this.gigs[key].price}
+              </p>
             </div>
+          </div>
           </li>
         )
     }

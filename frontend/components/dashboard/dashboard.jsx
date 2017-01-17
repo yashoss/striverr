@@ -53,6 +53,7 @@ export default class Dashboard extends React.Component{
   }
 
   componentDidMount(){
+    $("html, body").css('overflowY', 'initial');
     this.props.requestUser(this.props.id);
   }
 

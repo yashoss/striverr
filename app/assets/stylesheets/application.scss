@@ -2870,7 +2870,7 @@ header {
 nav.login-signup {
   padding-right: 10%;
   text-decoration: none;
-  color: lightblue;
+  color: white;
   display: flex;
   float: right;
   margin-top: -70px;
@@ -2908,7 +2908,7 @@ header a:link {
   display: inline-block;
   align-self: center;
   margin-top: 0;
-  margin-left: 250px;
+  margin-left: 67px;
 }
 
 body {
@@ -2945,12 +2945,7 @@ input.login-input {
 
 .review-button {
   background-color: #e3e0cf;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid #e3e0cf;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  border: 1px solid #e6e3d2;
   margin-left: -45px;
   border: 0;
   background: #5786c1;
@@ -2963,7 +2958,6 @@ input.login-input {
   position: relative;
   cursor: pointer;
   margin-bottom: 8px;
-  box-shadow: 1px 0px #3A587B, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae;
 }
 
 h4 {
@@ -3022,16 +3016,13 @@ div.header-name:hover {
 
 #gigs-index ul {
   list-style: none;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   width: 100%;
   position: relative;
   justify-content: flex-start;
   padding-top: 20px;
   flex-wrap: wrap;
-  border-radius: 10px;
-  border: 1px solid #e9ece5;
-  margin-top: -60px;
   z-index: 2;
 }
 
@@ -3068,24 +3059,24 @@ div.header-name:hover {
   position: relative;
   background-color: white;
   margin-right: 40px;
-  background-color: #9fa8a3;
   cursor: pointer;
   border-radius: 10px;
 }
 
 ul.nav-items {
   list-style: none;
-  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .nav-bar {
-  background-color: black;
+  background-color: transparent;
   width: 150px;
   height: 360px;
-  margin-left: 10px;
+  margin-left: 47px;
+  border-right: 1px solid #ccc;
+  margin-top: 41px;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
   bottom: 0;
   z-index: 1;
   float: left;
@@ -3095,35 +3086,30 @@ li#gaming {
   padding: 10px 5px;
   margin: 10px 15px;
   display: flex;
-  justify-content: center;
 }
 
 li#design {
   padding: 10px 5px;
   margin: 10px 15px;
   display: flex;
-  justify-content: center;
 }
 
 li#web-dev {
   padding: 10px 5px;
   margin: 10px 15px;
   display: flex;
-  justify-content: center;
 }
 
 li#art {
   padding: 10px 5px;
   margin: 10px 15px;
   display: flex;
-  justify-content: center;
 }
 
 li#writing {
   padding: 10px 5px;
   margin: 10px 15px;
   display: flex;
-  justify-content: center;
 }
 
 div.main-home img {
@@ -3136,7 +3122,7 @@ div.main-home img {
 
 h4.category-header {
   padding-top: 10px;
-  color: white;
+  color: black;
   font-size: 21px;
 }
 
@@ -3204,7 +3190,7 @@ ul {
 }
 
 .purchase-button {
-  border: 0;
+  border: 1px solid #6089c4;
   background: #5786c1;
   color: white;
   padding: 8px 14px;
@@ -3214,7 +3200,6 @@ ul {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  box-shadow: 1px 0px #3A587B, 0px 1px #4171ae, 2px 1px #3a587f, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae, 4px 3px #3a587f, 3px 4px #4171ae, 5px 4px #3a587f, 4px 5px #4171ae, 6px 5px #3a587f, 5px 6px #4171ae;
 }
 
 a.logout {
@@ -3266,13 +3251,6 @@ textarea.gig-field {
   margin: 0 20px 20px 20px;
   padding-bottom: 50px;
   width: 500px;
-}
-
-button.purchase-button:hover {
-  box-shadow: 1px 0px #3A587B, 0px 1px #4171ae, 2px 1px #3A587D, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae;
-  padding: 7px 12px;
-  margin: 1.5px 3px;
-  font-size: 17px;
 }
 
 .new-gig-form select {
@@ -3548,7 +3526,7 @@ ul.users-gigs-list li {
 .profile-info {
   display: flex;
   float: left;
-  margin-left: 10%;
+  margin-left: 253px;
   flex-direction: column;
 }
 
@@ -3631,8 +3609,7 @@ li.gig-show-description h3 {
 }
 
 hgroup.header-group a {
-  background-color: #c0dfd9;
-  border-radius: 5px;
+  background-color: rgba(250, 250, 250, .95);
   color: #3b3a36;
   font-size: 20px;
   font-weight: 700;
@@ -3641,7 +3618,7 @@ hgroup.header-group a {
   position: relative;
   display: flex;
   margin-left: 0;
-  border: 1px solid green;
+  border: 1px solid #ccc;
   flex-direction: column;
 }
 
@@ -3749,12 +3726,12 @@ li#all {
   padding: 10px 5px;
   margin: 2px 15px;
   display: flex;
-  justify-content: center;
 }
 
 .nav-bar li {
   cursor: pointer;
-  background-color: #c0dfd9;
+  color: #555;
+  justify-content: flex-end;
 }
 
 #slider {
@@ -4177,7 +4154,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background: #222;
+  background: #313131;
 }
 
 .logo {
@@ -4308,11 +4285,7 @@ hgroup.header-group a:hover {
   margin: 0 auto;
   height: 100%;
   padding: 5px;
-  -moz-box-shadow: 0 0 5px #333;
-  -webkit-box-shadow: 0 0 5px #333;
-  box-shadow: 0 0 5px #333;
-  background-color: #f2f2f2;
-  border-radius: 10px;
+  background-color: #fff;
 }
 
 .holder .image {
@@ -4377,11 +4350,11 @@ h4.cart-description-header {
 div#slogan {
   position: absolute;
   z-index: 99;
-  color: white;
+  color: rgba(250, 250, 250, 0.8);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 26px;
-  margin-left: 250px;
+  margin-left: 67px;
   font-family: "Pluto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 80px;
 }
@@ -4400,11 +4373,6 @@ h1.slogan2 {
 h1.slogan3 {
   margin: 0;
   margin-top: -15px;
-  text-shadow: 2px 2px 3px #000000, 2px 2px 5px #0000FF;
-}
-
-h1.slogan3 {
-  color: blue;
 }
 
 @-webkit-keyframes color-change {
@@ -4551,14 +4519,6 @@ fieldset, label {
 .rating > label:hover ~ input:checked ~ label,
 .rating > input:checked ~ label:hover ~ label {
   color: #FFED85;
-}
-
-input.review-button:hover {
-  box-shadow: 1px 0px #3A587B, 0px 1px #4171ae, 2px 1px #3A587D, 1px 2px #4171ae, 3px 2px #3a587f, 2px 3px #4171ae;
-  font-size: 17px;
-  padding: 2.5px 14px;
-  margin-left: -44px;
-  margin-bottom: 9.5px;
 }
 
 .reviews-container::-webkit-scrollbar {
@@ -4835,10 +4795,8 @@ span.price {
 
 #gigs-index ul.users-gigs-list {
   margin: 20px;
-  justify-content: center;
-  margin-right: 163px;
+  width: 545px;
   display: flex;
-  width: 600px;
   flex-direction: row;
 }
 
