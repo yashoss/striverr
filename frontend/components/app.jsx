@@ -12,6 +12,14 @@ const App = ({children}) => (
       <GreetingContainer />
     </header>
     {children}
+    <footer>
+      <div className="footer">
+        <Link to="/" className="footer-link">Home</Link>
+        <Link to="/" className="footer-link">About Us</Link>
+        <Link to="/" className="footer-link">Contact</Link>
+        <p className="cpyright">Made By: Yasin Hosseinpur</p>
+      </div>
+    </footer>
   </div>
 );
 
