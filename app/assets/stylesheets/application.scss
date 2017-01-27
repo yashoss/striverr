@@ -3008,6 +3008,7 @@ div#gigs-index {
   margin: 0 auto;
   margin-left: 250px;
   margin-right: 100px;
+  -webkit-transition: height 1500ms ease;
 }
 
 div.header-name:hover {
@@ -3024,6 +3025,7 @@ div.header-name:hover {
   padding-top: 20px;
   flex-wrap: wrap;
   z-index: 2;
+  -webkit-transition: height 1500ms ease;
 }
 
 @media screen and (min-width: 1184px) {
@@ -3174,7 +3176,7 @@ ul {
 .gig-user-info {
   float: right;
   display: flex;
-  min-height: 49vh;
+  min-height: 485px;
   width: 300px;
   justify-content: flex-start;
   padding: 10px;
@@ -3631,7 +3633,7 @@ hgroup.header-group div {
 }
 
 .new-review-form {
-  margin-left: 54px;
+  margin-left: 53px;
   width: 500px;
   display: flex;
   background-color: aliceblue;
@@ -3679,13 +3681,14 @@ ul.reviews-list {
 .review-gut {
   float: left;
   margin-top: 20px;
+  padding-left: 10px;
 }
 
 .reviews-container {
   width: 500px;
-  margin-left: 6%;
+  margin-left: 53px;
   display: flex;
-  height: 33vh;
+  height: 330px;
   overflow-y: scroll;
   border-top: 0.5px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -4619,13 +4622,16 @@ p.index-price {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding-right: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 p.title-index {
   height: 55px;
   overflow: hidden;
-  padding-left: 5px;
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-right: 10px;
 }
 
 .reviewer a p {
