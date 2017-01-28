@@ -123,7 +123,7 @@ export default class Greeting extends React.Component{
     return(
       <div key="greetings">
         {this.show}
-        <Modal key="modal" isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
+        <Modal key="modal" isOpen={this.state.modal} contentLabel="Modal" onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
           <SessionFormContainer formType={this.state.formType} closeModal={this.closeModal.bind(this)}/>
         </Modal>
       </div>
