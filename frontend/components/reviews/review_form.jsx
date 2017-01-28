@@ -30,7 +30,7 @@ class ReviewForm extends React.Component{
     const toRender = [];
     if(this.props.currentUser){
        toRender.push(
-        <div>
+        <div key="review-form">
 
           <form onSubmit={this.handleSubmit}>
             <textarea value={this.state.body} placeholder="Leave feedback..."
