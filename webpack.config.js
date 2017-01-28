@@ -1,6 +1,18 @@
 var path = require("path");
 
 module.exports = {
+  plugins:[
+  new webpack.DefinePlugin({
+    'process.env':{
+      'NODE_ENV': JSON.stringify('production')
+    }
+  }),
+  new webpack.optimize.UglifyJsPlugin({
+    compress:{
+      warnings: true
+    }
+  })
+],
   context: __dirname,
   entry: "./frontend/striverr.jsx",
   output: {
@@ -24,9 +36,3 @@ module.exports = {
     extensions: ["", ".js", ".jsx" ]
   }
 };
-
-new webpack.DefinePlugin({
-  "process.env": {
-     NODE_ENV: JSON.stringify("production")
-   }
-})
