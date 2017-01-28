@@ -100,8 +100,8 @@ export default class Dashboard extends React.Component{
       };
       gigs_array.push(
         <li key={key} onClick={this.openModal.bind(this, key)}>
-        <div key="holder" className="holder">
-        <div key="image" className="image" id="image-show">
+        <div className="holder">
+        <div className="image" id="image-show">
 
         <img src={gig.photo_url} />
         <p className="title-index">
@@ -127,7 +127,7 @@ export default class Dashboard extends React.Component{
         let order = user.sells[key];
         total_sales += 1;
           orders_array.push(
-            <li  key={`${user.id}-order-${order.id}`}>
+            <li  key={`${user.id}-order-${key}`}>
               <div key="left-user" className="left-side-user-gig">
                 <h3 className="user-gig-title">{order.title}</h3>
                 <img className="user-gig-img" src={order.photo_url} />
