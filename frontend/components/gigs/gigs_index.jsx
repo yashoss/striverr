@@ -94,7 +94,7 @@ export default class GigsIndex extends React.Component{
         <ul>
           {gigs_list}
         </ul>
-        <Modal isOpen={this.state.modal} onRequestClose={this.closeModal.bind(this) contentLabel="Modal"}  style={this.state.style}>
+        <Modal isOpen={this.state.modal} contentLabel="Modal" onRequestClose={this.closeModal.bind(this)}  style={this.state.style}>
           <div className="close-button">
             <h1 className="close" onClick={this.closeModal.bind(this)}>X</h1>
           </div>
