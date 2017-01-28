@@ -3152,7 +3152,10 @@ div.gig-pic img {
 .gig-show-container {
   width: 898px;
   margin-left: -40px;
+  position: relative;
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 ul {
@@ -3176,7 +3179,7 @@ ul {
 .gig-user-info {
   float: right;
   display: flex;
-  min-height: 485px;
+  height: 54%;
   width: 300px;
   justify-content: flex-start;
   padding: 10px;
@@ -3688,7 +3691,8 @@ ul.reviews-list {
   width: 500px;
   margin-left: 53px;
   display: flex;
-  height: 330px;
+  height: 37%;
+  position: relative;
   overflow-y: scroll;
   border-top: 0.5px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -4690,7 +4694,7 @@ div#search {
 .gig-pic h3 {
   margin-top: 10px;
   margin-bottom: 0px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 .stars2 {
