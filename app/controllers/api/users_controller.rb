@@ -2,8 +2,10 @@ class Api::UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
+		p @user
 
 		if @user.save
+			print "savedsaved!@!!!"
 			login(@user)
 			render :show
 		else

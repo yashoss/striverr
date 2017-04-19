@@ -37,6 +37,7 @@ class SessionForm extends React.Component {
 		if(this.props.formType === "/guest"){
 			this.props.processForm({user: {username: "Guest", password: "password"}});
 		}else{
+			console.log(this.props.formType)
 			const user = this.state;
 			this.props.processForm({user});
 		}

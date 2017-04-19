@@ -5,12 +5,14 @@ class Api::SessionsController < ApplicationController
       params[:user][:username],
       params[:user][:password]
     )
+		p @user
 
     if @user
 			login(@user)
       # TODO: Redirect to page displaying option to browse or post.
 			render "api/users/show"
 		else
+			print "2"
 			render(
         json: ["Invalid username/password combination"],
         status: 401
