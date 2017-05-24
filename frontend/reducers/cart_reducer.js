@@ -7,7 +7,6 @@ const CartReducer = function(state = {}, action){
     case GigsConstants.RECEIVE_CART_ITEMS:
       return merge({}, state, action.cartItems);
     case GigsConstants.REPLACE_CART_ITEMS:
-    debugger;
       return action.cartItems;
     case OrderConstants.RECEIVE_ORDERS:
       return {};

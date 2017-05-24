@@ -25,7 +25,6 @@ const GigsMiddleware = ({getState, dispatch}) => next => action => {
       fetchCartItems(action.user_id, gotItems);
       return next(action);
     case GigsConstants.REMOVE_CART_ITEM:
-    debugger;
       const cartItems = data => dispatch(replaceCartItems(data));
       removeCartItem(action.id, cartItems);
       return next(action);
