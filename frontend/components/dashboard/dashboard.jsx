@@ -57,10 +57,6 @@ export default class Dashboard extends React.Component{
     this.props.requestUser(this.props.id);
   }
 
-  componentWillReceiveProps(newProps){
-    this.props.requestUser(newProps.id);
-  }
-
   removeGig(id){
     this.props.removeGig(id);
   }

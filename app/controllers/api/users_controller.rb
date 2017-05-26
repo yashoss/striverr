@@ -5,7 +5,6 @@ class Api::UsersController < ApplicationController
 		p @user
 
 		if @user.save
-			print "savedsaved!@!!!"
 			login(@user)
 			render :show
 		else
@@ -18,6 +17,7 @@ class Api::UsersController < ApplicationController
 		unless (current_user && current_user.id == @user.id)
 			@user.profile_views += 1
 			@user.save
+			print("viewed")
 		end
 		render :show
 	end
